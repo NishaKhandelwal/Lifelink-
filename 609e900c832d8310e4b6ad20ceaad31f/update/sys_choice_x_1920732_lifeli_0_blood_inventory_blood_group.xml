@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_choice_set field="blood_group" table="x_1920732_lifeli_0_blood_inventory">
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>c7cf1cb118fb4bb5b648e72fbe3f4c6e</sys_id>
+      <name>x_1920732_lifeli_0_blood_inventory</name>
+      <element>blood_group</element>
+      <label>A+</label>
+      <value>a_positive</value>
+      <sequence>0</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>ce00ca01730841c989b9c6dcb4c96c7b</sys_id>
+      <name>x_1920732_lifeli_0_blood_inventory</name>
+      <element>blood_group</element>
+      <label>A-</label>
+      <value>a_negative</value>
+      <sequence>1</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>fdc901434f044fa58bb4c24b1e519215</sys_id>
+      <name>x_1920732_lifeli_0_blood_inventory</name>
+      <element>blood_group</element>
+      <label>B+</label>
+      <value>b_positive</value>
+      <sequence>2</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>fe3d00bc00f34b28b3b44cd382fbf3f5</sys_id>
+      <name>x_1920732_lifeli_0_blood_inventory</name>
+      <element>blood_group</element>
+      <label>B-</label>
+      <value>b_negative</value>
+      <sequence>3</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>0b21652f55024ba9beb0075f3ee98f9e</sys_id>
+      <name>x_1920732_lifeli_0_blood_inventory</name>
+      <element>blood_group</element>
+      <label>AB+</label>
+      <value>ab_positive</value>
+      <sequence>4</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>65c49e4d6ac84ce6b00519a7eb6e4fcf</sys_id>
+      <name>x_1920732_lifeli_0_blood_inventory</name>
+      <element>blood_group</element>
+      <label>AB-</label>
+      <value>ab_negative</value>
+      <sequence>5</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>41940fa62db44a6f87a493e94e7f50a0</sys_id>
+      <name>x_1920732_lifeli_0_blood_inventory</name>
+      <element>blood_group</element>
+      <label>O+</label>
+      <value>o_positive</value>
+      <sequence>6</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>b60bc820800d4cdba160b78a236a9ed1</sys_id>
+      <name>x_1920732_lifeli_0_blood_inventory</name>
+      <element>blood_group</element>
+      <label>O-</label>
+      <value>o_negative</value>
+      <sequence>7</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice_set action="INSERT_OR_UPDATE">
+      <sys_id>0e881923c0274087998019902919a683</sys_id>
+      <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+      <name>x_1920732_lifeli_0_blood_inventory</name>
+      <element>blood_group</element>
+    </sys_choice_set>
+  </sys_choice_set>
+</record_update>

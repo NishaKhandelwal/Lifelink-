@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_choice_set field="emergency_level" table="x_1920732_lifeli_0_blood_request">
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>92b9cd1edccd4838b18aa78ec23ff7ec</sys_id>
+      <name>x_1920732_lifeli_0_blood_request</name>
+      <element>emergency_level</element>
+      <label>Low</label>
+      <value>low</value>
+      <sequence>0</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>d3ed14d234fd4a0cad45e69420a8d95d</sys_id>
+      <name>x_1920732_lifeli_0_blood_request</name>
+      <element>emergency_level</element>
+      <label>Medium</label>
+      <value>medium</value>
+      <sequence>1</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>62a7e474a9ad470ea0ffcde373faf597</sys_id>
+      <name>x_1920732_lifeli_0_blood_request</name>
+      <element>emergency_level</element>
+      <label>High</label>
+      <value>high</value>
+      <sequence>2</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>af595eb843c04ed59273fa34d9a2797f</sys_id>
+      <name>x_1920732_lifeli_0_blood_request</name>
+      <element>emergency_level</element>
+      <label>Critical</label>
+      <value>critical</value>
+      <sequence>3</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice_set action="INSERT_OR_UPDATE">
+      <sys_id>1c5a81adfad0494ebfb3d7d7c2859e46</sys_id>
+      <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+      <name>x_1920732_lifeli_0_blood_request</name>
+      <element>emergency_level</element>
+    </sys_choice_set>
+  </sys_choice_set>
+</record_update>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+  <sys_security_acl_role action="INSERT_OR_UPDATE">
+    <sys_id>4b684c778f234a1e88daba662423ff28</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_security_acl_role_4b684c778f234a1e88daba662423ff28</sys_update_name>
+    <sys_security_acl>5bf9c45d4a284dcb885605a01f1a423c</sys_security_acl>
+    <sys_user_role name="x_1920732_lifeli_0.blood_bank">90b2137ed4264d8a9458ef4979c62514</sys_user_role>
+  </sys_security_acl_role>
+</record_update>

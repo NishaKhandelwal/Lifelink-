@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_choice_set field="blood_group" table="x_1920732_lifeli_0_donation_history">
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>0e3dd90c0d6843baa33f0dfdc1d2e19c</sys_id>
+      <name>x_1920732_lifeli_0_donation_history</name>
+      <element>blood_group</element>
+      <label>A+</label>
+      <value>a_positive</value>
+      <sequence>0</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>62bc4b0f6c314ead96c8c992bf74bdcd</sys_id>
+      <name>x_1920732_lifeli_0_donation_history</name>
+      <element>blood_group</element>
+      <label>A-</label>
+      <value>a_negative</value>
+      <sequence>1</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>3352c92f9e204e95aaab9e8a16039e5e</sys_id>
+      <name>x_1920732_lifeli_0_donation_history</name>
+      <element>blood_group</element>
+      <label>B+</label>
+      <value>b_positive</value>
+      <sequence>2</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>f4fb96d3d0534027ac0f1da8d6242f19</sys_id>
+      <name>x_1920732_lifeli_0_donation_history</name>
+      <element>blood_group</element>
+      <label>B-</label>
+      <value>b_negative</value>
+      <sequence>3</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>75443fd9f8024e41a6d7958dbdbfda6e</sys_id>
+      <name>x_1920732_lifeli_0_donation_history</name>
+      <element>blood_group</element>
+      <label>AB+</label>
+      <value>ab_positive</value>
+      <sequence>4</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>ef4c22f14c594ef5918e07521b6c3ebc</sys_id>
+      <name>x_1920732_lifeli_0_donation_history</name>
+      <element>blood_group</element>
+      <label>AB-</label>
+      <value>ab_negative</value>
+      <sequence>5</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>0151be432d474586bca503aa66b6af13</sys_id>
+      <name>x_1920732_lifeli_0_donation_history</name>
+      <element>blood_group</element>
+      <label>O+</label>
+      <value>o_positive</value>
+      <sequence>6</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>bb841e683ce54df6859b15683939523b</sys_id>
+      <name>x_1920732_lifeli_0_donation_history</name>
+      <element>blood_group</element>
+      <label>O-</label>
+      <value>o_negative</value>
+      <sequence>7</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice_set action="INSERT_OR_UPDATE">
+      <sys_id>a19d6ca71e9146d4b483107b32ca97af</sys_id>
+      <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+      <name>x_1920732_lifeli_0_donation_history</name>
+      <element>blood_group</element>
+    </sys_choice_set>
+  </sys_choice_set>
+</record_update>
