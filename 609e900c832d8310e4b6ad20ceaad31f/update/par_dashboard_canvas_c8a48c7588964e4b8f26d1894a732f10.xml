@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_canvas">
+  <par_dashboard_canvas action="INSERT_OR_UPDATE">
+    <sys_id>c8a48c7588964e4b8f26d1894a732f10</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>par_dashboard_canvas_c8a48c7588964e4b8f26d1894a732f10</sys_update_name>
+    <dashboard>05ced2efb9d3433e87e97a6042cd97e4</dashboard>
+    <dashboard_tab>df9e04d153c0482eac42c82b926e5a11</dashboard_tab>
+  </par_dashboard_canvas>
+</record_update>

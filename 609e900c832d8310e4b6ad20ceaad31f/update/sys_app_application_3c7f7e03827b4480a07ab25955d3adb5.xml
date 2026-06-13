@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app_application">
+  <sys_app_application action="INSERT_OR_UPDATE">
+    <sys_id>3c7f7e03827b4480a07ab25955d3adb5</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_app_application_3c7f7e03827b4480a07ab25955d3adb5</sys_update_name>
+    <active>true</active>
+    <category>dc5af250b12046b5ad400b9d7f971444</category>
+    <description>LifeLink – Smart Blood Donation &amp; Emergency Blood Request Management System</description>
+    <device_type>browser</device_type>
+    <hint>Blood Donation &amp; Emergency Request Management</hint>
+    <name/>
+    <order>100</order>
+    <roles/>
+    <title>LifeLink</title>
+  </sys_app_application>
+</record_update>

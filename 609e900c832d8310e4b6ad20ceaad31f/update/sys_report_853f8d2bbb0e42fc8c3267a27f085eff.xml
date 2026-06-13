@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report">
+  <sys_report action="INSERT_OR_UPDATE">
+    <sys_id>853f8d2bbb0e42fc8c3267a27f085eff</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_report_853f8d2bbb0e42fc8c3267a27f085eff</sys_update_name>
+    <description>Bar chart tracking active donors and donation frequency.</description>
+    <field>donor</field>
+    <filter>donation_status=completed</filter>
+    <table>x_1920732_lifeli_0_donation_history</table>
+    <title>Donor Activity</title>
+    <type>bar</type>
+  </sys_report>
+</record_update>

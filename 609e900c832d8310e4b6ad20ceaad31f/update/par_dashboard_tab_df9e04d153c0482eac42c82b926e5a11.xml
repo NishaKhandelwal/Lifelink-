@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_tab">
+  <par_dashboard_tab action="INSERT_OR_UPDATE">
+    <sys_id>df9e04d153c0482eac42c82b926e5a11</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>par_dashboard_tab_df9e04d153c0482eac42c82b926e5a11</sys_update_name>
+    <active>true</active>
+    <dashboard>05ced2efb9d3433e87e97a6042cd97e4</dashboard>
+    <name>Overview</name>
+    <order>0</order>
+  </par_dashboard_tab>
+</record_update>

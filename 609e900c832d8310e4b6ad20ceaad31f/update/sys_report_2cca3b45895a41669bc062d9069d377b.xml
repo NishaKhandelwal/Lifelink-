@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report">
+  <sys_report action="INSERT_OR_UPDATE">
+    <sys_id>2cca3b45895a41669bc062d9069d377b</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_report_2cca3b45895a41669bc062d9069d377b</sys_update_name>
+    <description>Line chart showing donation trends over time, grouped by month.</description>
+    <field>donation_date</field>
+    <filter>donation_status=completed</filter>
+    <table>x_1920732_lifeli_0_donation_history</table>
+    <title>Donation History by Month</title>
+    <type>line</type>
+  </sys_report>
+</record_update>
