@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report">
+  <sys_report action="INSERT_OR_UPDATE">
+    <sys_id>3937dcc3ec3446a1801268cd0840edcd</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_report_3937dcc3ec3446a1801268cd0840edcd</sys_update_name>
+    <description>Shows flow execution counts and states for LifeLink automation.</description>
+    <field>state</field>
+    <filter>flow.sys_scope=x_1920732_lifeli_0</filter>
+    <table>sys_flow_context</table>
+    <title>LifeLink Automation Activity</title>
+    <type>bar</type>
+  </sys_report>
+</record_update>

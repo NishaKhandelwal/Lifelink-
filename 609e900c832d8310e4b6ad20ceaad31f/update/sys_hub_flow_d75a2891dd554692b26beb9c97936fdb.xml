@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_hub_flow action="INSERT_OR_UPDATE">
+    <sys_id>d75a2891dd554692b26beb9c97936fdb</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_hub_flow_d75a2891dd554692b26beb9c97936fdb</sys_update_name>
+    <access>public</access>
+    <active>false</active>
+    <annotation/>
+    <category/>
+    <description>Send reminder notifications for scheduled activities.</description>
+    <flow_priority>MEDIUM</flow_priority>
+    <generation_source>fluent</generation_source>
+    <internal_name>send_reminder</internal_name>
+    <label_cache>[{"name":"subflow.reminder_type","label":"Input➛Reminder Type","type":"string","base_type":"string","usedInstances":{"a9007a76-fd3f-4a6a-815f-282eadc8eed1":["ah_subject"]},"attributes":{},"reference_table":null,"reference_display":null},{"name":"subflow.record","label":"Input➛Related Record","type":"reference","base_type":"reference","usedInstances":{"a9007a76-fd3f-4a6a-815f-282eadc8eed1":["record"]},"attributes":{},"reference_table":null,"reference_display":null},{"name":"subflow.recipient_email","label":"Input➛Recipient Email","type":"string","base_type":"string","usedInstances":{"a9007a76-fd3f-4a6a-815f-282eadc8eed1":["ah_to"]},"attributes":{},"reference_table":null,"reference_display":null}]</label_cache>
+    <name>Send Reminder</name>
+    <run_as>system</run_as>
+    <run_with_roles/>
+    <show_draft_actions>false</show_draft_actions>
+    <status>draft</status>
+    <sys_policy/>
+    <type>subflow</type>
+    <version>2</version>
+  <version_record/>
+    </sys_hub_flow>
+  <sys_hub_flow_input action="delete_multiple" query="model=d75a2891dd554692b26beb9c97936fdb^sys_idNOT INa8513307de214a358818e16dd233c130,6a1ab0ced799454eaf0cdb34cfd49c06,831f820971804158b953c535ffeb6633"/>
+  <sys_hub_flow_input action="INSERT_OR_UPDATE">
+    <sys_id>a8513307de214a358818e16dd233c130</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <active>true</active>
+    <attributes/>
+    <default_value/>
+    <element>recipient_email</element>
+    <hint/>
+    <internal_type>string</internal_type>
+    <label>Recipient Email</label>
+    <mandatory>true</mandatory>
+    <max_length>40</max_length>
+    <model>d75a2891dd554692b26beb9c97936fdb</model>
+    <model_id>d75a2891dd554692b26beb9c97936fdb</model_id>
+    <model_table>sys_hub_flow</model_table>
+    <name>var__m_sys_hub_flow_input_d75a2891dd554692b26beb9c97936fdb</name>
+    <order>1</order>
+  </sys_hub_flow_input>
+  <sys_hub_flow_input action="INSERT_OR_UPDATE">
+    <sys_id>6a1ab0ced799454eaf0cdb34cfd49c06</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <active>true</active>
+    <attributes/>
+    <default_value/>
+    <element>reminder_type</element>
+    <hint/>
+    <internal_type>string</internal_type>
+    <label>Reminder Type</label>
+    <mandatory>true</mandatory>
+    <max_length>40</max_length>
+    <model>d75a2891dd554692b26beb9c97936fdb</model>
+    <model_id>d75a2891dd554692b26beb9c97936fdb</model_id>
+    <model_table>sys_hub_flow</model_table>
+    <name>var__m_sys_hub_flow_input_d75a2891dd554692b26beb9c97936fdb</name>
+    <order>2</order>
+  </sys_hub_flow_input>
+  <sys_hub_flow_input action="INSERT_OR_UPDATE">
+    <sys_id>831f820971804158b953c535ffeb6633</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <active>true</active>
+    <attributes/>
+    <default_value/>
+    <element>record</element>
+    <hint/>
+    <internal_type>reference</internal_type>
+    <label>Related Record</label>
+    <mandatory>false</mandatory>
+    <max_length>32</max_length>
+    <model>d75a2891dd554692b26beb9c97936fdb</model>
+    <model_id>d75a2891dd554692b26beb9c97936fdb</model_id>
+    <model_table>sys_hub_flow</model_table>
+    <name>var__m_sys_hub_flow_input_d75a2891dd554692b26beb9c97936fdb</name>
+    <order>3</order>
+    <reference>task</reference>
+  </sys_hub_flow_input>
+  <sys_documentation action="INSERT_OR_UPDATE">
+    <sys_id>6777e5d4f44041a1bd338a8a25bad166</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <element>recipient_email</element>
+    <hint/>
+    <label>Recipient Email</label>
+    <language>en</language>
+    <name>var__m_sys_hub_flow_input_d75a2891dd554692b26beb9c97936fdb</name>
+    <plural>Recipient Emails</plural>
+  </sys_documentation>
+  <sys_documentation action="INSERT_OR_UPDATE">
+    <sys_id>4f236bf97aa84eb9a98aa4b6b9e3c6b2</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <element>reminder_type</element>
+    <hint/>
+    <label>Reminder Type</label>
+    <language>en</language>
+    <name>var__m_sys_hub_flow_input_d75a2891dd554692b26beb9c97936fdb</name>
+    <plural>Reminder Types</plural>
+  </sys_documentation>
+  <sys_documentation action="INSERT_OR_UPDATE">
+    <sys_id>01518c04520c47039ff79a1af5c4e744</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <element>record</element>
+    <hint/>
+    <label>Related Record</label>
+    <language>en</language>
+    <name>var__m_sys_hub_flow_input_d75a2891dd554692b26beb9c97936fdb</name>
+    <plural>Related Records</plural>
+  </sys_documentation>
+  <sys_hub_action_instance_v2 action="delete_multiple" query="flow=d75a2891dd554692b26beb9c97936fdb^sys_idNOT INa9007a76fd3f4a6a815f282eadc8eed1"/>
+  <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+    <sys_id>a9007a76fd3f4a6a815f282eadc8eed1</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <action_type>c1806bf4a70323008299b39f087901cb</action_type>
+    <action_type_parent>c1806bf4a70323008299b39f087901cb</action_type_parent>
+    <active>true</active>
+    <comment>Send reminder email</comment>
+    <display_text/>
+    <flow>d75a2891dd554692b26beb9c97936fdb</flow>
+    <generation_source/>
+    <order>1</order>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+    <ui_id>a9007a76-fd3f-4a6a-815f-282eadc8eed1</ui_id>
+    <updation_source/>
+    <values>H4sIAAAAAAAAA9WT20rDQBCGX2XY6xLvSyl4X0RsEUQkTLLTZuye2J0khFLwHXxDn0TSau1JbC+9nOP/7czs80o5tKSGSrAwlG+MgWrQ1FtnWqqB0pyCwe7x0JvKyEFuS+GG1HCOJtFABYxoSSiq4UpJF45ar9eDnWKLQtFiXOZkkc2PrMSajkW3voslC+8NoTvQwypPdfFKpey9cMJzmrBbwgNZdpriEFarVBdz49ssfvnyvut6fTqJK6svxk8S2S2O6Quvuz30URjPKk7ACRC+xWAevQWpCHZs0y4J2QyefA0VNgTooA6lt+wWkMqKdG1IA/ZYLF0G94YwERi/AHYgHqYUGy7pzre91TC1GwVNgmxSNroJ41EYf7y9w+xUuI+eTu5/wV+8uEqsOVhbpNJHvbe1/fvoQ+fO6mzOxQzal7UlJznr4wsS/xsJB+5LNj/xT6ST5OsP++UT/SiUnXoEAAA=</values>
+  </sys_hub_action_instance_v2>
+  <sys_hub_alias_mapping action="delete_multiple" query="source_id=a9007a76fd3f4a6a815f282eadc8eed1"/>
+</record_update>

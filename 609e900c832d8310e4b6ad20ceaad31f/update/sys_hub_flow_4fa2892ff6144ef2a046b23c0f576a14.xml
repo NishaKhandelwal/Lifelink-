@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_hub_flow action="INSERT_OR_UPDATE">
+    <sys_id>4fa2892ff6144ef2a046b23c0f576a14</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_hub_flow_4fa2892ff6144ef2a046b23c0f576a14</sys_update_name>
+    <access>public</access>
+    <active>false</active>
+    <annotation/>
+    <category/>
+    <description>Add a work note to any task record for activity logging.</description>
+    <flow_priority>MEDIUM</flow_priority>
+    <generation_source>fluent</generation_source>
+    <internal_name>log_activity</internal_name>
+    <label_cache>[{"name":"subflow.record","label":"Input➛Record","type":"reference","base_type":"reference","usedInstances":{"f6d87378-2d92-44e6-90cd-80b24131c74e":["record"]},"attributes":{},"reference_table":null,"reference_display":null},{"name":"subflow.message","label":"Input➛Message","type":"string","base_type":"string","usedInstances":{"f6d87378-2d92-44e6-90cd-80b24131c74e":["values"]},"attributes":{},"reference_table":null,"reference_display":null}]</label_cache>
+    <name>Log Activity</name>
+    <run_as>system</run_as>
+    <run_with_roles/>
+    <show_draft_actions>false</show_draft_actions>
+    <status>draft</status>
+    <sys_policy/>
+    <type>subflow</type>
+    <version>2</version>
+  <version_record/>
+    </sys_hub_flow>
+  <sys_hub_flow_input action="delete_multiple" query="model=4fa2892ff6144ef2a046b23c0f576a14^sys_idNOT IN3a202cc0821a4e3588acd2f8468b561a,dafff768f3fd49b0a4ae36e005470eb7"/>
+  <sys_hub_flow_input action="INSERT_OR_UPDATE">
+    <sys_id>3a202cc0821a4e3588acd2f8468b561a</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <active>true</active>
+    <attributes/>
+    <default_value/>
+    <element>record</element>
+    <hint/>
+    <internal_type>reference</internal_type>
+    <label>Record</label>
+    <mandatory>true</mandatory>
+    <max_length>32</max_length>
+    <model>4fa2892ff6144ef2a046b23c0f576a14</model>
+    <model_id>4fa2892ff6144ef2a046b23c0f576a14</model_id>
+    <model_table>sys_hub_flow</model_table>
+    <name>var__m_sys_hub_flow_input_4fa2892ff6144ef2a046b23c0f576a14</name>
+    <order>1</order>
+    <reference>task</reference>
+  </sys_hub_flow_input>
+  <sys_hub_flow_input action="INSERT_OR_UPDATE">
+    <sys_id>dafff768f3fd49b0a4ae36e005470eb7</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <active>true</active>
+    <attributes/>
+    <default_value/>
+    <element>message</element>
+    <hint/>
+    <internal_type>string</internal_type>
+    <label>Message</label>
+    <mandatory>true</mandatory>
+    <max_length>40</max_length>
+    <model>4fa2892ff6144ef2a046b23c0f576a14</model>
+    <model_id>4fa2892ff6144ef2a046b23c0f576a14</model_id>
+    <model_table>sys_hub_flow</model_table>
+    <name>var__m_sys_hub_flow_input_4fa2892ff6144ef2a046b23c0f576a14</name>
+    <order>2</order>
+  </sys_hub_flow_input>
+  <sys_documentation action="INSERT_OR_UPDATE">
+    <sys_id>9bec676cb01d4c6db243967b8ab1bb99</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <element>record</element>
+    <hint/>
+    <label>Record</label>
+    <language>en</language>
+    <name>var__m_sys_hub_flow_input_4fa2892ff6144ef2a046b23c0f576a14</name>
+    <plural>Records</plural>
+  </sys_documentation>
+  <sys_documentation action="INSERT_OR_UPDATE">
+    <sys_id>8d06c21edfb44dcea4c9ebd46b99e6d2</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <element>message</element>
+    <hint/>
+    <label>Message</label>
+    <language>en</language>
+    <name>var__m_sys_hub_flow_input_4fa2892ff6144ef2a046b23c0f576a14</name>
+    <plural>Messages</plural>
+  </sys_documentation>
+  <sys_hub_action_instance_v2 action="delete_multiple" query="flow=4fa2892ff6144ef2a046b23c0f576a14^sys_idNOT INf6d873782d9244e690cd80b24131c74e"/>
+  <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+    <sys_id>f6d873782d9244e690cd80b24131c74e</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <action_type>f9d01dd2c31332002841b63b12d3aea1</action_type>
+    <action_type_parent>f9d01dd2c31332002841b63b12d3aea1</action_type_parent>
+    <active>true</active>
+    <comment>Add work note to record</comment>
+    <display_text/>
+    <flow>4fa2892ff6144ef2a046b23c0f576a14</flow>
+    <generation_source/>
+    <order>1</order>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+    <ui_id>f6d87378-2d92-44e6-90cd-80b24131c74e</ui_id>
+    <updation_source/>
+    <values>H4sIAAAAAAAAA42QTQrCMBBG7zLr4AEKLlx4ADduRMOYTCU0aUImbSkhdxda0Na66HK++XmPuWVo0RFUkPBpSU6FgB5tN4fcgABtOFgcr+uUVTQhnVQyPUFVo2USEDCio0QRqgxpDD+nSxEfYiTlo17QcubuWVs/HOZWKVv235ndJtqrzlGbpNErlcmAFyqDj41sfSI+fomOmPFFpTzOl63ZnpX9LyMXLCaSs1Ap9zcKdIEQqgEAAA==</values>
+  </sys_hub_action_instance_v2>
+  <sys_hub_alias_mapping action="delete_multiple" query="source_id=f6d873782d9244e690cd80b24131c74e"/>
+</record_update>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sysauto_script">
   <sysauto_script action="INSERT_OR_UPDATE">
-    <sys_id>5af5def666d14fb8b73ba7f2a78b9dc6</sys_id>
+    <sys_id>2d935919a55d46c99bb34f51a009b044</sys_id>
     <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
-    <sys_update_name>sysauto_script_5af5def666d14fb8b73ba7f2a78b9dc6</sys_update_name>
+    <sys_update_name>sysauto_script_2d935919a55d46c99bb34f51a009b044</sys_update_name>
     <active>true</active>
     <advanced>false</advanced>
     <business_calendar/>
@@ -10,9 +10,9 @@
     <conditional>false</conditional>
     <entered_run_end/>
     <entered_run_start/>
-    <entered_time>1970-01-01 08:00:00</entered_time>
+    <entered_time>1970-01-01 00:00:00</entered_time>
     <max_drift/>
-    <name>Appointment Reminder Scheduler</name>
+    <name>Donor Eligibility Checker</name>
     <offset/>
     <offset_type>0</offset_type>
     <repeat_every/>
@@ -24,28 +24,27 @@
     <run_end/>
     <run_month>1</run_month>
     <run_period/>
-    <run_start>2026-06-13 06:22:21</run_start>
-    <run_time>1970-01-01 08:00:00</run_time>
+    <run_start>2026-06-13 06:22:25</run_start>
+    <run_time>1970-01-01 00:00:00</run_time>
     <run_type>daily</run_type>
     <run_weekinmonth>1</run_weekinmonth>
     <script><![CDATA[(function() {
-    // Find appointments scheduled for tomorrow
-    var tomorrow = new GlideDateTime();
-    tomorrow.addDaysUTC(1);
-    var tomorrowDate = tomorrow.getDate().getValue();
-
-    var gr = new GlideRecord('x_1920732_lifeli_0_appointment');
-    gr.addQuery('appointment_status', 'scheduled');
-    gr.addQuery('appointment_date', '>=', tomorrowDate + ' 00:00:00');
-    gr.addQuery('appointment_date', '<=', tomorrowDate + ' 23:59:59');
+    // Find donors whose next_eligible_date has passed and are still temporarily_ineligible
+    var gr = new GlideRecord('x_1920732_lifeli_0_donor_profile');
+    gr.addQuery('eligibility_status', 'temporarily_ineligible');
+    gr.addQuery('next_eligible_date', '<=', new GlideDateTime().getDate().getValue());
     gr.query();
 
     var count = 0;
     while (gr.next()) {
-        gs.eventQueue('x_1920732_lifeli_0.appt.reminder', gr, gr.getValue('donor'), gr.getValue('blood_bank'));
+        gr.setValue('eligibility_status', 'eligible');
+        gr.update();
+
+        // Fire donor eligible event
+        gs.eventQueue('x_1920732_lifeli_0.donor.eligible', gr, gr.getValue('user'), gr.getValue('blood_group'));
         count++;
     }
-    gs.info('LifeLink: Appointment Reminder Scheduler sent ' + count + ' reminders for ' + tomorrowDate);
+    gs.info('LifeLink: Donor Eligibility Checker restored eligibility for ' + count + ' donors.');
 })();
 ]]></script>
     <sys_policy/>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_hub_flow action="INSERT_OR_UPDATE">
+    <sys_id>d84e77346448483b8dec1bdd8b8321c5</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_hub_flow_d84e77346448483b8dec1bdd8b8321c5</sys_update_name>
+    <access>public</access>
+    <active>false</active>
+    <annotation/>
+    <category/>
+    <description>Daily check for donors who have become eligible again. Updates their status and sends notification.</description>
+    <flow_priority>MEDIUM</flow_priority>
+    <generation_source>fluent</generation_source>
+    <internal_name>donor_eligibility_restoration</internal_name>
+    <label_cache>[{"name":"6e9b24b0-b72d-43b8-8427-89cfc65c7552.Count","label":"6e9b24b0-b72d-43b8-8427-89cfc65c7552➛Count","type":"integer","base_type":"integer","usedInstances":{"f44ddd4b-4c4b-468a-8915-b600d7fe2b05":["condition"]},"attributes":{}},{"name":"6e9b24b0-b72d-43b8-8427-89cfc65c7552.Records","label":"6e9b24b0-b72d-43b8-8427-89cfc65c7552➛Records","type":"array.object","base_type":"array.object","usedInstances":{"33721700-6d06-4df5-94ff-05b99260b3f0":["items"]},"attributes":{},"column_name":"Records"},{"name":"33721700-6d06-4df5-94ff-05b99260b3f0.item","label":"3 - For Each - ➛item","type":"reference","base_type":"reference","usedInstances":{"bdf21a15-b80c-4f83-bc3f-99d52f7978ba":["record"],"a5319e0e-02de-442a-82fd-aae3b454d765":["record"]},"attributes":{}},{"name":"forEach.donor.user.email","label":"forEach➛donor➛user➛email","type":"string","base_type":"string","usedInstances":{"71c35c1d-7d3c-4465-b004-46596ec0114f":["recipient_email"]},"attributes":{}},{"name":"forEach.donor","label":"forEach➛donor","type":"reference","base_type":"reference","usedInstances":{"71c35c1d-7d3c-4465-b004-46596ec0114f":["record"]},"attributes":{}}]</label_cache>
+    <name>Donor Eligibility Restoration</name>
+    <run_as>system</run_as>
+    <run_with_roles/>
+    <show_draft_actions>false</show_draft_actions>
+    <status>draft</status>
+    <sys_policy/>
+    <type>flow</type>
+    <version>2</version>
+  <version_record/>
+    </sys_hub_flow>
+  <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=d84e77346448483b8dec1bdd8b8321c5^sys_idNOT INe9f9bb4a41954e1bbd88174993ff4598"/>
+  <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+    <sys_id>e9f9bb4a41954e1bbd88174993ff4598</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <category/>
+    <comment/>
+    <flow>d84e77346448483b8dec1bdd8b8321c5</flow>
+    <name>Daily</name>
+    <trigger_definition>89142dc0c32222002841b63b12d3ae8a</trigger_definition>
+    <trigger_inputs>H4sIAAAAAAAAA42QMWsDMQyF/0rR7ICODqXeuhQC3Rq6hFAUW70KfDojK4Ej5L8Hc1kCHToKPb33Pe0v4CbjyLbV5qSJP5e2zRABAhQ6coEIO5kYAog6m1LZLZUhwlgk87evu8yVNbP6epl+Z0n8Ic0h7g8BJtJMPtsC0e3EAWbLbBAHxABKU/e7O52pnPo4vL7gBocNDk+I8RkjYs+RVgstX/8RvQuXe5OWTKq/JZczQ/yh0rhDSsnGuiJWMprYO9UF/I+Kj5gPv7leDzdIg6TYSQEAAA==</trigger_inputs>
+    <trigger_outputs/>
+    <trigger_type>daily</trigger_type>
+  </sys_hub_trigger_instance_v2>
+  <sys_hub_action_instance_v2 action="delete_multiple" query="flow=d84e77346448483b8dec1bdd8b8321c5^sys_idNOT IN6e9b24b0b72d43b8842789cfc65c7552,bdf21a15b80c4f83bc3f99d52f7978ba,a5319e0e02de442a82fdaae3b454d765,7f90f332b32a4d1eb981276475d6eda8"/>
+  <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+    <sys_id>6e9b24b0b72d43b8842789cfc65c7552</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <action_type>43400a1587003300663ca1bb36cb0b4b</action_type>
+    <action_type_parent>43400a1587003300663ca1bb36cb0b4b</action_type_parent>
+    <active>true</active>
+    <comment>Find donors who are now eligible</comment>
+    <display_text/>
+    <flow>d84e77346448483b8dec1bdd8b8321c5</flow>
+    <generation_source/>
+    <order>1</order>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+    <ui_id>6e9b24b0-b72d-43b8-8427-89cfc65c7552</ui_id>
+    <updation_source/>
+    <values>H4sIAAAAAAAAA9VS0UrEMBD8l31SKFJPRCwK+gMWRHwRL2zbbV1Jk5BsS8vRfxdzeNbeg329x8xMdiY7eduBwZYgg9KaioWtCZBAj7r7BklzwwVrllEFQenCvVDrrEfPelRs9gJNW0ODqJ+TqlAof3qxFY4Pn9hjKD07yZpwUVDDxrBp8jrSZ+cLAZnqQG3z5+O5d/8NhAQqDk7j+Hriz9jTj6VwT5DVqAMl4NBjS0Iesh3I6BblTVNy6FSw0DSrc1CXt5v05mqjNNekWaWqssZ65bytOUoXm1txY3XImEbFaPOQwXpRUfIbNGIYyuNAM2b9dj4sl39NWxyUp9BpmX336zRd+kVotREboYY8TNP7F46HptBZAwAA</values>
+  </sys_hub_action_instance_v2>
+  <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+    <sys_id>bdf21a15b80c4f83bc3f99d52f7978ba</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <action_type>f9d01dd2c31332002841b63b12d3aea1</action_type>
+    <action_type_parent>f9d01dd2c31332002841b63b12d3aea1</action_type_parent>
+    <active>true</active>
+    <comment>Restore donor eligibility</comment>
+    <display_text/>
+    <flow>d84e77346448483b8dec1bdd8b8321c5</flow>
+    <generation_source/>
+    <order>4</order>
+    <parent_ui_id>33721700-6d06-4df5-94ff-05b99260b3f0</parent_ui_id>
+    <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+    <ui_id>bdf21a15-b80c-4f83-bc3f-99d52f7978ba</ui_id>
+    <updation_source/>
+    <values>H4sIAAAAAAAAA5XQwWrDMAwG4HfxORlu0iYksEMPe4BddhmbcWJ5COTY2EpZCH730RZGtx6WHSV+wffrdRWTdiB6wXogUJehECdN83n5qXZdJdu6UoQWCJVUxk8+qhC9RTpHDaZAennZfpHGiIGPI+MJRG81JShE0FE7YIiiXwUv4Rcp5+JbGmH00dwo17Wu22rXSlk2Rjbl3thD2e2tLeVh6LqqkUNt5QMyuJzvyf893+w3fpwdTKzQ/ChwcaebAkD4gQMS8qISa57T43VF8P70fC/+M7/9xeACaQZ1peT89gV9oc++EgIAAA==</values>
+  </sys_hub_action_instance_v2>
+  <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+    <sys_id>a5319e0e02de442a82fdaae3b454d765</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <action_type>80a30edeff30311077a95dac793bf19b</action_type>
+    <action_type_parent>80a30edeff30311077a95dac793bf19b</action_type_parent>
+    <active>true</active>
+    <comment>Fire donor eligible event</comment>
+    <display_text/>
+    <flow>d84e77346448483b8dec1bdd8b8321c5</flow>
+    <generation_source/>
+    <order>5</order>
+    <parent_ui_id>33721700-6d06-4df5-94ff-05b99260b3f0</parent_ui_id>
+    <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+    <ui_id>a5319e0e-02de-442a-82fd-aae3b454d765</ui_id>
+    <updation_source/>
+    <values>H4sIAAAAAAAAA5WQQQqDMBBF7zJrlVRbRXe9RDelhJhMykA0YUylRbx70UVpKRS7/J/58OadJ+hVh9BAVK1DSGBU7rbku9zVuaiKXDqy6EgKaXzvWQb2ltZTQ0Nw6nHavhg0U4hHHWlEaKxyAyYQFKsOIzI0E8RHeNHIFW2ekxcko/Zs3iinqSiqfFcJkZZGlOne2ENa761NxaGt67wUbWFFRhG7ef5G/ne+md94feuwj5LMxwM4LuUafqnOVnEZOrpSu83192QzLKNFxl4vri9PUo4cThICAAA=</values>
+  </sys_hub_action_instance_v2>
+  <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+    <sys_id>7f90f332b32a4d1eb981276475d6eda8</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <action_type>5bc1bcc6531003003bf1d9109ec587d4</action_type>
+    <action_type_parent>5bc1bcc6531003003bf1d9109ec587d4</action_type_parent>
+    <active>true</active>
+    <comment>Log eligibility restoration run</comment>
+    <display_text/>
+    <flow>d84e77346448483b8dec1bdd8b8321c5</flow>
+    <generation_source/>
+    <order>7</order>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+    <ui_id>7f90f332-b32a-4d1e-b981-276475d6eda8</ui_id>
+    <updation_source/>
+    <values>H4sIAAAAAAAAA6WPwQrCMBBEfyXsufQDehP0Lh68iEhM1rqwyYbsWigl/y69WbwIXoeZeTOXBbJPCAOwjDfGCRk6mDy/Vo3yQ6CDSFrYz+etqqFSsV0wmhCGh2fFDoqvPqFhhWEBm8vqD0+hgNBat4ElVPUjfuD2kqW6A9NId2Ky2Z1QTao3kuyCpMJoGHt3rBJQFaOLa0T775F/df18Ta1SHqG16xtb19HpSQEAAA==</values>
+  </sys_hub_action_instance_v2>
+  <sys_hub_alias_mapping action="delete_multiple" query="source_id=6e9b24b0b72d43b8842789cfc65c7552"/>
+  <sys_hub_alias_mapping action="delete_multiple" query="source_id=bdf21a15b80c4f83bc3f99d52f7978ba"/>
+  <sys_hub_alias_mapping action="delete_multiple" query="source_id=a5319e0e02de442a82fdaae3b454d765"/>
+  <sys_hub_alias_mapping action="delete_multiple" query="source_id=7f90f332b32a4d1eb981276475d6eda8"/>
+  <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=d84e77346448483b8dec1bdd8b8321c5^sys_idNOT INf44ddd4b4c4b468a8915b600d7fe2b05,337217006d064df594ff05b99260b3f0"/>
+  <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+    <sys_id>f44ddd4b4c4b468a8915b600d7fe2b05</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <comment/>
+    <flow>d84e77346448483b8dec1bdd8b8321c5</flow>
+    <logic_definition>af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+    <order>2</order>
+    <ui_id>f44ddd4b-4c4b-468a-8915-b600d7fe2b05</ui_id>
+    <values>H4sIAAAAAAAAA52PwQrCMBBE/2XPrUhtbe1BKJ68ixfxkGy2upgmJUkVCfl3KSp49jbzZthlItgpjFPwB9t5zxcD7emcwV04FlKTf1tFyJ6tOcxsb+b+J3gaMTD+ood1t17bxy/jr45gxEDQAlqjOLA1MD/T08xiXNNGFqVc5rIuVF6uZJM3ZVHnzQZ7XFdYV1Wx2NnJhJS2S8hAsR+1eB7/v4BX1srRZ/conBgokIM2pgw8Oh5Dh4HvBG0vtKd0Ti+/JGVlNAEAAA==</values>
+  </sys_hub_flow_logic_instance_v2>
+  <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+    <sys_id>337217006d064df594ff05b99260b3f0</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <comment>Update each eligible donor</comment>
+    <flow>d84e77346448483b8dec1bdd8b8321c5</flow>
+    <logic_definition>098e1dc5c3e232002841b63b12d3ae33</logic_definition>
+    <order>3</order>
+    <parent_ui_id>f44ddd4b-4c4b-468a-8915-b600d7fe2b05</parent_ui_id>
+    <ui_id>33721700-6d06-4df5-94ff-05b99260b3f0</ui_id>
+    <values>H4sIAAAAAAAAA52NuwrCQBRE/+XWWZE1787SVoKNpNhX5GKyG3ITQ1j232VRIbXdzJlhxoNb5nGZqXFnInxYqO9tAi8xoZC9oY/VRiGhs01kFxv732CzYkC1R6ubnl3v1j3Dn/ZgxWCgBpzNQBCP+iV673NTSZ7KI5MF1yw9yZKVKS9YWalO5Zkqsowfrka5SVMIkIBGGnux3f5dCG14A6zQ89H+AAAA</values>
+  </sys_hub_flow_logic_instance_v2>
+  <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=d84e77346448483b8dec1bdd8b8321c5^sys_idNOT IN71c35c1d7d3c4465b00446596ec0114f"/>
+  <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+    <sys_id>71c35c1d7d3c4465b00446596ec0114f</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <attributes/>
+    <comment/>
+    <display_text/>
+    <flow>d84e77346448483b8dec1bdd8b8321c5</flow>
+    <generation_source/>
+    <order>6</order>
+    <parent_ui_id>33721700-6d06-4df5-94ff-05b99260b3f0</parent_ui_id>
+    <subflow>dcaf26ecbb9d47bbaaf6da38b9c3e89e</subflow>
+    <subflow_inputs>H4sIAAAAAAAAA42QQQqDQAxFrzJkLR7AnVCvUCilSDpGGxgTiWNBhrl70UW7KILr/z483j2B4EhQgZHniUliSyNygALeGJZtSalXa9C/yk5FrVxmsnKHcoYCOp6ngOv1HD2h4UiRDKoEcZ22yxyNZYCci6+NaOSePUZWaXfs53PTxdVGrgk88DOQi+ouKhjJ1QOy/DudeJz0MvJq3XGcE0UOMxj1ZCSeIOfHB7PmhhmZAQAA</subflow_inputs>
+    <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+    <ui_id>71c35c1d-7d3c-4465-b004-46596ec0114f</ui_id>
+    <wait_for_completion>true</wait_for_completion>
+  </sys_hub_sub_flow_instance_v2>
+  <sys_hub_alias_mapping action="delete_multiple" query="source_id=71c35c1d7d3c4465b00446596ec0114f"/>
+</record_update>

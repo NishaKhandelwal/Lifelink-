@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+  <sysevent_register action="INSERT_OR_UPDATE">
+    <sys_id>68fc49602ddd49b4ae5b2caca38516bc</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sysevent_register_68fc49602ddd49b4ae5b2caca38516bc</sys_update_name>
+    <description>Raised when a donor becomes eligible to donate again.</description>
+    <event_name>x_1920732_lifeli_0.donor.eligible</event_name>
+    <fired_by>Flow: Donor Eligibility Restoration</fired_by>
+    <suffix>donor.eligible</suffix>
+    <table>x_1920732_lifeli_0_donor_profile</table>
+  </sysevent_register>
+</record_update>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_hub_flow action="INSERT_OR_UPDATE">
+    <sys_id>12637318524841aa874a6f415474dfb8</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_hub_flow_12637318524841aa874a6f415474dfb8</sys_update_name>
+    <access>public</access>
+    <active>false</active>
+    <annotation/>
+    <category/>
+    <description>Execute all actions required after a successful donation: update blood request, create donation history, update donor profile, update blood inventory.</description>
+    <flow_priority>MEDIUM</flow_priority>
+    <generation_source>fluent</generation_source>
+    <internal_name>complete_donation_process</internal_name>
+    <label_cache>[{"name":"subflow.appointment","label":"Input➛Appointment Record","type":"string","base_type":"string","usedInstances":{"efa9ee73-53a3-4411-9e87-2ecfb6c48697":["conditions"],"bd067c90-bb64-46a3-8f13-2705e5154c52":["record"]},"attributes":{},"reference_table":null,"reference_display":null},{"name":"efa9ee73-53a3-4411-9e87-2ecfb6c48697.Record.blood_request","label":"efa9ee73-53a3-4411-9e87-2ecfb6c48697➛Record➛blood_request","type":"string","base_type":"string","usedInstances":{"ae62d1db-7266-4def-805f-972a588e1cbb":["conditions"]},"attributes":{}},{"name":"ae62d1db-7266-4def-805f-972a588e1cbb.Record","label":"ae62d1db-7266-4def-805f-972a588e1cbb➛Record","type":"reference","base_type":"reference","usedInstances":{"371d777e-36f9-4753-a1cc-d6198141c945":["record"]},"attributes":{}},{"name":"efa9ee73-53a3-4411-9e87-2ecfb6c48697.Record.sys_updated_on","label":"efa9ee73-53a3-4411-9e87-2ecfb6c48697➛Record➛sys_updated_on","type":"glide_date_time","base_type":"glide_date_time","usedInstances":{"371d777e-36f9-4753-a1cc-d6198141c945":["values"]},"attributes":{}},{"name":"efa9ee73-53a3-4411-9e87-2ecfb6c48697.Record.donor","label":"efa9ee73-53a3-4411-9e87-2ecfb6c48697➛Record➛donor","type":"reference","base_type":"reference","usedInstances":{"355e0c0a-3f65-4d60-9ba3-233eec1d0eba":["values"],"1e5a1089-40a9-403b-b594-8b8c05f37810":["conditions"]},"attributes":{}},{"name":"efa9ee73-53a3-4411-9e87-2ecfb6c48697.Record.blood_bank","label":"efa9ee73-53a3-4411-9e87-2ecfb6c48697➛Record➛blood_bank","type":"reference","base_type":"reference","usedInstances":{"355e0c0a-3f65-4d60-9ba3-233eec1d0eba":["values"]},"attributes":{}},{"name":"ae62d1db-7266-4def-805f-972a588e1cbb.Record.blood_group","label":"ae62d1db-7266-4def-805f-972a588e1cbb➛Record➛blood_group","type":"string","base_type":"string","usedInstances":{"355e0c0a-3f65-4d60-9ba3-233eec1d0eba":["values"]},"attributes":{}},{"name":"ae62d1db-7266-4def-805f-972a588e1cbb.Record.units_required","label":"ae62d1db-7266-4def-805f-972a588e1cbb➛Record➛units_required","type":"integer","base_type":"integer","usedInstances":{"355e0c0a-3f65-4d60-9ba3-233eec1d0eba":["values"]},"attributes":{}},{"name":"1e5a1089-40a9-403b-b594-8b8c05f37810.Record","label":"1e5a1089-40a9-403b-b594-8b8c05f37810➛Record","type":"reference","base_type":"reference","usedInstances":{"4d8e362a-2427-48a4-b92e-ebee57237924":["record"]},"attributes":{}}]</label_cache>
+    <name>Complete Donation Process</name>
+    <run_as>system</run_as>
+    <run_with_roles/>
+    <show_draft_actions>false</show_draft_actions>
+    <status>draft</status>
+    <sys_policy/>
+    <type>subflow</type>
+    <version>2</version>
+  <version_record/>
+    </sys_hub_flow>
+  <sys_hub_flow_input action="delete_multiple" query="model=12637318524841aa874a6f415474dfb8^sys_idNOT INcb79ddceab0b4e06a074655de7044915"/>
+  <sys_hub_flow_input action="INSERT_OR_UPDATE">
+    <sys_id>cb79ddceab0b4e06a074655de7044915</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <active>true</active>
+    <attributes/>
+    <default_value/>
+    <element>appointment</element>
+    <hint/>
+    <internal_type>reference</internal_type>
+    <label>Appointment Record</label>
+    <mandatory>true</mandatory>
+    <max_length>32</max_length>
+    <model>12637318524841aa874a6f415474dfb8</model>
+    <model_id>12637318524841aa874a6f415474dfb8</model_id>
+    <model_table>sys_hub_flow</model_table>
+    <name>var__m_sys_hub_flow_input_12637318524841aa874a6f415474dfb8</name>
+    <order>1</order>
+    <reference>x_1920732_lifeli_0_appointment</reference>
+  </sys_hub_flow_input>
+  <sys_documentation action="INSERT_OR_UPDATE">
+    <sys_id>8182646978024a5b86a9ebe7ed648fa8</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <element>appointment</element>
+    <hint/>
+    <label>Appointment Record</label>
+    <language>en</language>
+    <name>var__m_sys_hub_flow_input_12637318524841aa874a6f415474dfb8</name>
+    <plural>Appointment Records</plural>
+  </sys_documentation>
+  <sys_hub_action_instance_v2 action="delete_multiple" query="flow=12637318524841aa874a6f415474dfb8^sys_idNOT INefa9ee7353a344119e872ecfb6c48697,ae62d1db72664def805f972a588e1cbb,371d777e36f94753a1ccd6198141c945,355e0c0a3f654d609ba3233eec1d0eba,1e5a108940a9403bb5948b8c05f37810,4d8e362a242748a4b92eebee57237924,bd067c90bb6446a38f132705e5154c52"/>
+  <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+    <sys_id>efa9ee7353a344119e872ecfb6c48697</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <action_type>9d09f99587003300663ca1bb36cb0ba3</action_type>
+    <action_type_parent>9d09f99587003300663ca1bb36cb0ba3</action_type_parent>
+    <active>true</active>
+    <comment>Look up appointment details</comment>
+    <display_text/>
+    <flow>12637318524841aa874a6f415474dfb8</flow>
+    <generation_source/>
+    <order>1</order>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+    <ui_id>efa9ee73-53a3-4411-9e87-2ecfb6c48697</ui_id>
+    <updation_source/>
+    <values>H4sIAAAAAAAAA5XRwWrDMAwG4HfROYyuO4wFdthL7DKGUB2ZCRzbWHK3EPLupWF0hhTaXe0f/5/kjxkijQw9aCqGNmWGDo4U6uWM1EEHg2gONL1vb9QVyfbmTI4Mvaeg3EGmQiMbF+hnWF/twX0lcQzL0l1KXYqDmKSobeukKMPrPGs9+JC+HyjnJNFGjrYsVyy38vcL/zit0ugQ2rX84OPLfvf8tMcgnoPgDpvKLfBm/m7gKsGV1QLF41iDSQ6MhV0qgyIVRp9qHJDceaTGX5XRS1H7DW/FVxL//+bPE6Az4SJdAgAA</values>
+  </sys_hub_action_instance_v2>
+  <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+    <sys_id>ae62d1db72664def805f972a588e1cbb</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <action_type>9d09f99587003300663ca1bb36cb0ba3</action_type>
+    <action_type_parent>9d09f99587003300663ca1bb36cb0ba3</action_type_parent>
+    <active>true</active>
+    <comment>Look up linked blood request</comment>
+    <display_text/>
+    <flow>12637318524841aa874a6f415474dfb8</flow>
+    <generation_source/>
+    <order>2</order>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+    <ui_id>ae62d1db-7266-4def-805f-972a588e1cbb</ui_id>
+    <updation_source/>
+    <values>H4sIAAAAAAAAA62Sz2qEQAyH3yVnXdY/XVdhD32FHnopJcQxQwOjY2fGpSK+e6mUrcU9WOg1yeT3fWFeJuioZajAWxcwjD1DBFcyw61GXkEEjfje0Pi87XjlpA+PKsiVodJkPEfQk6OWAzuoJli2VqDerCiGeY5uocp2jQSxnV+njh6luUwTayqZiyx+yCiL8zxJ4pLPRZyy0vVJ5edTWRyeWFnXHGpjbYOO3wf2YZ7vEP/P1v22P2pr40C1WZ/4A5MyPRZZikY0G8Ej/grdiux4sRtyocEFbQ0pGtvBBOkNo1su4ZEco7ZD1yCpL62Vw+AZtTgfvoe3zHcm/v5tXj8BF0aTMa0CAAA=</values>
+  </sys_hub_action_instance_v2>
+  <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+    <sys_id>371d777e36f94753a1ccd6198141c945</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <action_type>f9d01dd2c31332002841b63b12d3aea1</action_type>
+    <action_type_parent>f9d01dd2c31332002841b63b12d3aea1</action_type_parent>
+    <active>true</active>
+    <comment>Set blood request to Fulfilled</comment>
+    <display_text/>
+    <flow>12637318524841aa874a6f415474dfb8</flow>
+    <generation_source/>
+    <order>3</order>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+    <ui_id>371d777e-36f9-4753-a1cc-d6198141c945</ui_id>
+    <updation_source/>
+    <values>H4sIAAAAAAAAA7WRy0rFMBCG3yXr5tB72oILFz6ALtyIJ0ySCQTSi016sIS8u7SKHD2bunA5P/wz38e8BDJAj6QjHoRFvg8JuYBdtvCdZ22esiLn1mi0hqdc2HFUfMa3BZ0nCVHGTRbW5+MNJ2cz+XvpzQVJp8E6TMgEM/TocSZdIH6dfiHFmHyTzijHWV1RhgBY5ypTgrK8rmmpUNMmrTRtWQ5V02AmhTg97b0Yb6H/vuCwgxrl0uPguVE/JHZ2dyXhPHi8K856sdpYi4qrLQgBNbSIrKBVAQUtyyyjLTaM5ii1qGXZ1C37Qju51fFl2oqKj0OM54fHW9t/vHT8tdhPFjzyT/0YXz8A/uhtrooCAAA=</values>
+  </sys_hub_action_instance_v2>
+  <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+    <sys_id>355e0c0a3f654d609ba3233eec1d0eba</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <action_type>2de05916c31332002841b63b12d3aee1</action_type>
+    <action_type_parent>2de05916c31332002841b63b12d3aee1</action_type_parent>
+    <active>true</active>
+    <comment>Create donation history record</comment>
+    <display_text/>
+    <flow>12637318524841aa874a6f415474dfb8</flow>
+    <generation_source/>
+    <order>4</order>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+    <ui_id>355e0c0a-3f65-4d60-9ba3-233eec1d0eba</ui_id>
+    <updation_source/>
+    <values>H4sIAAAAAAAAA+2Su07EMBBF/8V1vMr7sVIKCj4AChpErLE9AQsnNrazYhX53xFZaXk1LDXljHSurs7M/UpmmJDsSQCukW1DQg6gl/flK8u6PG2KnGk1olYsZdLMEJSZ2ZPywbgjSYhU3mo43l0EeeGUDVciqAOS/QjaY0IsOJgwoCP7lYSj/VYsxuTcd6voP3WVZjauX1ccoUNsCloVUNCyzDLaYdvQHMXIa1G2ddfsblEYJ3cbE+PAtTGScZifLwz4AM8pj84stl9XwDqXmeS0yeualhJH2qbVSLsmh6ptMROcf43ZyBiHZVbBn5yhvDDpxDp8WZRDGeNwVu8DhMX3wkxWY0A5XN/8vN2/xL9I/P0v42Q1BGSnp43x4Q09Pt+agQMAAA==</values>
+  </sys_hub_action_instance_v2>
+  <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+    <sys_id>1e5a108940a9403bb5948b8c05f37810</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <action_type>9d09f99587003300663ca1bb36cb0ba3</action_type>
+    <action_type_parent>9d09f99587003300663ca1bb36cb0ba3</action_type_parent>
+    <active>true</active>
+    <comment>Look up donor profile</comment>
+    <display_text/>
+    <flow>12637318524841aa874a6f415474dfb8</flow>
+    <generation_source/>
+    <order>5</order>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+    <ui_id>1e5a1089-40a9-403b-b594-8b8c05f37810</ui_id>
+    <updation_source/>
+    <values>H4sIAAAAAAAAA6WSQWrDMBBF7zJrO8SxG8eGLnqFLropZZhIIzogW0KSQ43x3UtNSU2ThUu30tf89wa9TtBTx9BCdCFhGj1DBheyw/WMooIMtERvaXy5vYkqiE9PKsmFoTVkI2fgKVDHiQO0EyxTW1DvThTDPGfXUuV6LUlcH9etY0TRj9PEhhrmuswfSirzqiqKvOFTnR9YmfNRVadjU++eWbmgd9r1LszzHdL/Tdtu96OyNkx0tuuVfmDRHPZ1eUArhq3gHpcy9MEZWaK/BDa82Ay50OCCtoYUg91gk3jLGJYNRKTAaNzQayT1pbVyGCKjkRDTd/iW+U7i79/k7RMxj2i2nQIAAA==</values>
+  </sys_hub_action_instance_v2>
+  <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+    <sys_id>4d8e362a242748a4b92eebee57237924</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <action_type>f9d01dd2c31332002841b63b12d3aea1</action_type>
+    <action_type_parent>f9d01dd2c31332002841b63b12d3aea1</action_type_parent>
+    <active>true</active>
+    <comment>Update donor eligibility</comment>
+    <display_text/>
+    <flow>12637318524841aa874a6f415474dfb8</flow>
+    <generation_source/>
+    <order>6</order>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+    <ui_id>4d8e362a-2427-48a4-b92e-ebee57237924</ui_id>
+    <updation_source/>
+    <values>H4sIAAAAAAAAA5WRwWqEQAyG32XOWsZ1ZVXooYc+QHvopbRD1FgC0Rlm4lKRefeiC2XbvbiXQEL+8H3kfVEjDKhqJdAwmq1J1Bl4WoffJqsO+pQfDFOPTEabzo7WG+dtT7yudhQcw/y2PxFaT06eWqEzqroHDpgoBx4GFPSqXpTM7h9SjMkvqcfW+u6KclkyLCDTZZUeNawlb9KmqI5p2ZStLvr8VGb64XXLxXgLff+B3Q6dbacBRzHU/ZHY2MOVBDJ9UUNMMpsgIFN4FByc9eCJZ0PjZYHx8/nl1uDO9P4X4OAYBM0FM8aPH8x4hYoyAgAA</values>
+  </sys_hub_action_instance_v2>
+  <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+    <sys_id>bd067c90bb6446a38f132705e5154c52</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <action_type>80a30edeff30311077a95dac793bf19b</action_type>
+    <action_type_parent>80a30edeff30311077a95dac793bf19b</action_type_parent>
+    <active>true</active>
+    <comment>Fire donation completed event</comment>
+    <display_text/>
+    <flow>12637318524841aa874a6f415474dfb8</flow>
+    <generation_source/>
+    <order>7</order>
+    <parent_ui_id/>
+    <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+    <ui_id>bd067c90-bb64-46a3-8f13-2705e5154c52</ui_id>
+    <updation_source/>
+    <values>H4sIAAAAAAAAA43QwQrDIAwG4HfJWUrXHcZ620vsMoZYjSDYKjbtVsR3H/ZQOsqGx4T85ON/RBhEj9ACic4iMJiFnfL85qdrU1/ODbdGozW85sJ7ZwbqcSBgoMzorVjupfejDMbTTZKZEVot7IgMvAiiR8IAbQRa/CbhKysltgEDShfUThjjOHXaule1e5TSkfb7sNiknJxyihv1hcI5L9fhX3X5MVXS9d4ioSpp7xgpxgbUGHCQub/nByZ4UzziAQAA</values>
+  </sys_hub_action_instance_v2>
+  <sys_hub_alias_mapping action="delete_multiple" query="source_id=efa9ee7353a344119e872ecfb6c48697"/>
+  <sys_hub_alias_mapping action="delete_multiple" query="source_id=ae62d1db72664def805f972a588e1cbb"/>
+  <sys_hub_alias_mapping action="delete_multiple" query="source_id=371d777e36f94753a1ccd6198141c945"/>
+  <sys_hub_alias_mapping action="delete_multiple" query="source_id=355e0c0a3f654d609ba3233eec1d0eba"/>
+  <sys_hub_alias_mapping action="delete_multiple" query="source_id=1e5a108940a9403bb5948b8c05f37810"/>
+  <sys_hub_alias_mapping action="delete_multiple" query="source_id=4d8e362a242748a4b92eebee57237924"/>
+  <sys_hub_alias_mapping action="delete_multiple" query="source_id=bd067c90bb6446a38f132705e5154c52"/>
+</record_update>
