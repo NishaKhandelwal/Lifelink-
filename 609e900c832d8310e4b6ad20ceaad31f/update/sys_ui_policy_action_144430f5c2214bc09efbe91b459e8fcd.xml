@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+  <sys_ui_policy_action action="INSERT_OR_UPDATE">
+    <sys_id>144430f5c2214bc09efbe91b459e8fcd</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_ui_policy_action_144430f5c2214bc09efbe91b459e8fcd</sys_update_name>
+    <cleared>false</cleared>
+    <disabled>ignore</disabled>
+    <field>units_available</field>
+    <field_message>WARNING: Low stock! Units are at or below the critical threshold.</field_message>
+    <field_message_type>warning</field_message_type>
+    <mandatory>ignore</mandatory>
+    <table>x_1920732_lifeli_0_blood_inventory</table>
+    <ui_policy short_description="Highlight low stock inventory records" table="x_1920732_lifeli_0_blood_inventory">00c3ef71f16f44c6a159270f7fbb73ea</ui_policy>
+    <value/>
+    <value_action>ignore</value_action>
+    <visible>ignore</visible>
+  </sys_ui_policy_action>
+</record_update>

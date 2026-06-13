@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+  <sys_ui_policy_action action="INSERT_OR_UPDATE">
+    <sys_id>8d1451dfa6954cd19e739eb33390e93c</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_ui_policy_action_8d1451dfa6954cd19e739eb33390e93c</sys_update_name>
+    <cleared>false</cleared>
+    <disabled>true</disabled>
+    <field>blood_group</field>
+    <field_message/>
+    <field_message_type>none</field_message_type>
+    <mandatory>ignore</mandatory>
+    <table>x_1920732_lifeli_0_blood_inventory</table>
+    <ui_policy short_description="Make Blood Bank and Blood Group read-only on existing records" table="x_1920732_lifeli_0_blood_inventory">ee74d8aa2506401f826710c3e2b52e36</ui_policy>
+    <value/>
+    <value_action>ignore</value_action>
+    <visible>ignore</visible>
+  </sys_ui_policy_action>
+</record_update>

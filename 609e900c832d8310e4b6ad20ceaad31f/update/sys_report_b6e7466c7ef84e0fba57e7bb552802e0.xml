@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report">
+  <sys_report action="INSERT_OR_UPDATE">
+    <sys_id>b6e7466c7ef84e0fba57e7bb552802e0</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_report_b6e7466c7ef84e0fba57e7bb552802e0</sys_update_name>
+    <description>Displays blood inventory records expiring within the next 7 days.</description>
+    <field>blood_group</field>
+    <filter>expiry_date&lt;=javascript:gs.daysAgoEnd(-7)</filter>
+    <table>x_1920732_lifeli_0_blood_inventory</table>
+    <title>Expiring Blood Inventory</title>
+    <type>list</type>
+  </sys_report>
+</record_update>
