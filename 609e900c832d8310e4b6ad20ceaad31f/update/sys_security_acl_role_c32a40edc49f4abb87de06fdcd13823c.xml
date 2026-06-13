@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+  <sys_security_acl_role action="INSERT_OR_UPDATE">
+    <sys_id>c32a40edc49f4abb87de06fdcd13823c</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_security_acl_role_c32a40edc49f4abb87de06fdcd13823c</sys_update_name>
+    <sys_security_acl>a79499579b794a959e03c75d5b22a9ab</sys_security_acl>
+    <sys_user_role name="x_1920732_lifeli_0.admin">c6af3a7a8700400fbf29900ae7d24ab5</sys_user_role>
+  </sys_security_acl_role>
+</record_update>

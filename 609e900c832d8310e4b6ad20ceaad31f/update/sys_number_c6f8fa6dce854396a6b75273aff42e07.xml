@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+  <sys_number action="INSERT_OR_UPDATE">
+    <sys_id>c6f8fa6dce854396a6b75273aff42e07</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_number_c6f8fa6dce854396a6b75273aff42e07</sys_update_name>
+    <category>x_1920732_lifeli_0_organization</category>
+    <maximum_digits>7</maximum_digits>
+    <number>1000</number>
+    <prefix>ORG</prefix>
+  </sys_number>
+</record_update>

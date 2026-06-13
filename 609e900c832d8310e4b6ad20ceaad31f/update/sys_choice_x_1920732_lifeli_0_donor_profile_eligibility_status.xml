@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+  <sys_choice_set field="eligibility_status" table="x_1920732_lifeli_0_donor_profile">
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>411a91e350644abda100acc83deae536</sys_id>
+      <name>x_1920732_lifeli_0_donor_profile</name>
+      <element>eligibility_status</element>
+      <label>Eligible</label>
+      <value>eligible</value>
+      <sequence>0</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>966bb3e831864160ba0d85db9cf95a35</sys_id>
+      <name>x_1920732_lifeli_0_donor_profile</name>
+      <element>eligibility_status</element>
+      <label>Temporarily Ineligible</label>
+      <value>temporarily_ineligible</value>
+      <sequence>1</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice action="INSERT_OR_UPDATE">
+      <sys_id>5022b163ab254f85896e03cfdcf02445</sys_id>
+      <name>x_1920732_lifeli_0_donor_profile</name>
+      <element>eligibility_status</element>
+      <label>Permanently Ineligible</label>
+      <value>permanently_ineligible</value>
+      <sequence>2</sequence>
+      <inactive>false</inactive>
+      <inactive_on_update>false</inactive_on_update>
+      <language>en</language>
+    </sys_choice>
+    <sys_choice_set action="INSERT_OR_UPDATE">
+      <sys_id>d2e3a2e5ff784698b4f5eb2083a7e692</sys_id>
+      <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+      <name>x_1920732_lifeli_0_donor_profile</name>
+      <element>eligibility_status</element>
+    </sys_choice_set>
+  </sys_choice_set>
+</record_update>
