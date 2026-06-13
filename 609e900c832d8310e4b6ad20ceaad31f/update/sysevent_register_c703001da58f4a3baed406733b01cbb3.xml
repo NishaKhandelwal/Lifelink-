@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sysevent_register">
+  <sysevent_register action="INSERT_OR_UPDATE">
+    <sys_id>c703001da58f4a3baed406733b01cbb3</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sysevent_register_c703001da58f4a3baed406733b01cbb3</sys_update_name>
+    <description>Raised after a donation is completed and all related records are updated.</description>
+    <event_name>x_1920732_lifeli_0.appt.completed</event_name>
+    <fired_by>Business Rule: Complete Appointment</fired_by>
+    <suffix>appt.completed</suffix>
+    <table>x_1920732_lifeli_0_appointment</table>
+  </sysevent_register>
+</record_update>

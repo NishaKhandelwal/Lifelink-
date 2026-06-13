@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report">
+  <sys_report action="INSERT_OR_UPDATE">
+    <sys_id>23e6370f9d9941a1bc49d7f2a29f34d4</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_report_23e6370f9d9941a1bc49d7f2a29f34d4</sys_update_name>
+    <description>Displays all appointments with Scheduled status.</description>
+    <field>appointment_status</field>
+    <filter>appointment_status=scheduled</filter>
+    <table>x_1920732_lifeli_0_appointment</table>
+    <title>Upcoming Appointments</title>
+    <type>list</type>
+  </sys_report>
+</record_update>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script">
+  <sys_script action="INSERT_OR_UPDATE">
+    <sys_id>98bd1dd3cc954868a8d1a28c04037591</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_script_98bd1dd3cc954868a8d1a28c04037591</sys_update_name>
+    <abort_action>false</abort_action>
+    <access>package_private</access>
+    <action_delete>false</action_delete>
+    <action_insert>false</action_insert>
+    <action_query>false</action_query>
+    <action_update>true</action_update>
+    <active>true</active>
+    <add_message>false</add_message>
+    <advanced>true</advanced>
+    <change_fields>false</change_fields>
+    <client_callable>false</client_callable>
+    <collection>x_1920732_lifeli_0_appointment</collection>
+    <condition/>
+    <description/>
+    <execute_function>false</execute_function>
+    <filter_condition>appointment_status=completed</filter_condition>
+    <is_rest>false</is_rest>
+    <message/>
+    <name>Complete Appointment</name>
+    <order>100</order>
+    <priority>100</priority>
+    <rest_method/>
+    <rest_method_text/>
+    <rest_service/>
+    <rest_service_text/>
+    <rest_variables/>
+    <role_conditions/>
+    <script><![CDATA[(function executeRule(current, previous) {
+    // Only proceed if status actually changed to completed
+    if (previous && previous.getValue('appointment_status') == 'completed') {
+        return;
+    }
+
+    var bloodRequestId = current.getValue('blood_request');
+    var donorId = current.getValue('donor');
+    var bloodBankId = current.getValue('blood_bank');
+
+    // 1. Update Blood Request: State → Fulfilled (3), Fulfilled Date → now
+    if (bloodRequestId) {
+        var request = new GlideRecord('x_1920732_lifeli_0_blood_request');
+        if (request.get(bloodRequestId)) {
+            request.setValue('state', '3'); // Fulfilled
+            request.setValue('fulfilled_date', new GlideDateTime().getValue());
+            request.update();
+        }
+    }
+
+    // 2. Create Donation History record
+    var bloodGroup = '';
+    var unitsRequired = 0;
+    if (bloodRequestId) {
+        var reqForHistory = new GlideRecord('x_1920732_lifeli_0_blood_request');
+        if (reqForHistory.get(bloodRequestId)) {
+            bloodGroup = reqForHistory.getValue('blood_group');
+            unitsRequired = parseInt(reqForHistory.getValue('units_required')) || 1;
+        }
+    }
+
+    var donation = new GlideRecord('x_1920732_lifeli_0_donation_history');
+    donation.initialize();
+    donation.setValue('donor', donorId);
+    donation.setValue('blood_bank', bloodBankId);
+    donation.setValue('donation_date', new GlideDateTime().getDate().getValue());
+    donation.setValue('blood_group', bloodGroup);
+    donation.setValue('units_donated', unitsRequired);
+    donation.setValue('donation_status', 'completed');
+    donation.insert();
+
+    // 3. Update Donor Profile
+    if (donorId) {
+        var donor = new GlideRecord('x_1920732_lifeli_0_donor_profile');
+        if (donor.get(donorId)) {
+            var today = new GlideDateTime();
+            donor.setValue('last_donation_date', today.getDate().getValue());
+
+            // Calculate next eligible date using system property
+            var days = parseInt(gs.getProperty('x_1920732_lifeli_0.donor_eligibility_days', '90'));
+            var nextEligible = new GlideDateTime();
+            nextEligible.addDaysUTC(days);
+            donor.setValue('next_eligible_date', nextEligible.getDate().getValue());
+
+            donor.setValue('eligibility_status', 'temporarily_ineligible');
+
+            // Increment total donations
+            var totalDonations = parseInt(donor.getValue('total_donations') || '0');
+            donor.setValue('total_donations', totalDonations + 1);
+
+            donor.update();
+        }
+    }
+
+    // 4. Update Blood Inventory: Decrease units
+    if (bloodBankId && bloodGroup) {
+        var inv = new GlideRecord('x_1920732_lifeli_0_blood_inventory');
+        inv.addQuery('blood_bank', bloodBankId);
+        inv.addQuery('blood_group', bloodGroup);
+        inv.query();
+        if (inv.next()) {
+            var currentUnits = parseInt(inv.getValue('units_available') || '0');
+            var newUnits = currentUnits - unitsRequired;
+            if (newUnits < 0) newUnits = 0;
+            inv.setValue('units_available', newUnits);
+            inv.update();
+        }
+    }
+
+    // 5. Fire appointment completed event
+    gs.eventQueue('x_1920732_lifeli_0.appt.completed', current, donorId, bloodRequestId);
+})(current, previous);
+]]></script>
+    <sys_policy/>
+    <template/>
+    <when>after</when>
+  </sys_script>
+</record_update>

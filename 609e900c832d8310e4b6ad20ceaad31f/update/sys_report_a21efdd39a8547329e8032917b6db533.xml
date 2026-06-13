@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report">
+  <sys_report action="INSERT_OR_UPDATE">
+    <sys_id>a21efdd39a8547329e8032917b6db533</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_report_a21efdd39a8547329e8032917b6db533</sys_update_name>
+    <description>Displays appointments that were cancelled or where the donor did not show up.</description>
+    <field>appointment_status</field>
+    <filter>appointment_statusINcancelled,no_show</filter>
+    <table>x_1920732_lifeli_0_appointment</table>
+    <title>Cancelled and No Show Appointments</title>
+    <type>list</type>
+  </sys_report>
+</record_update>

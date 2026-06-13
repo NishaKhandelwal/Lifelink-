@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+  <sys_ui_policy_action action="INSERT_OR_UPDATE">
+    <sys_id>b2670260b66e47c3add295332ccd102b</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_ui_policy_action_b2670260b66e47c3add295332ccd102b</sys_update_name>
+    <cleared>false</cleared>
+    <disabled>true</disabled>
+    <field>appointment_status</field>
+    <field_message/>
+    <field_message_type>none</field_message_type>
+    <mandatory>ignore</mandatory>
+    <table>x_1920732_lifeli_0_appointment</table>
+    <ui_policy short_description="Make appointment fields read-only when cancelled" table="x_1920732_lifeli_0_appointment">3c43778843da453b84fb98562264cd90</ui_policy>
+    <value/>
+    <value_action>ignore</value_action>
+    <visible>ignore</visible>
+  </sys_ui_policy_action>
+</record_update>
