@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_properties">
+  <sys_properties action="INSERT_OR_UPDATE">
+    <sys_id>1ca5e85bb0ea4df5ae58ec0fd13aeb5b</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_properties_1ca5e85bb0ea4df5ae58ec0fd13aeb5b</sys_update_name>
+    <choices/>
+    <description>Number of days before a donor becomes eligible to donate again after a completed donation.</description>
+    <ignore_cache>false</ignore_cache>
+    <is_private>false</is_private>
+    <name>x_1920732_lifeli_0.donor_eligibility_days</name>
+    <read_roles>admin</read_roles>
+    <suffix>donor_eligibility_days</suffix>
+    <type>integer</type>
+    <value>90</value>
+    <write_roles>admin</write_roles>
+  </sys_properties>
+</record_update>

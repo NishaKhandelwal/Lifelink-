@@ -40,9 +40,10 @@
         var donationDate = current.getValue('donation_date');
         donor.setValue('last_donation_date', donationDate);
 
-        // Calculate next eligible date (donation date + 90 days)
+        // Calculate next eligible date using system property
+        var days = parseInt(gs.getProperty('x_1920732_lifeli_0.donor_eligibility_days', '90'));
         var nextDate = new GlideDateTime(donationDate);
-        nextDate.addDaysUTC(90);
+        nextDate.addDaysUTC(days);
         donor.setValue('next_eligible_date', nextDate.getValue());
 
         // Set eligibility status to temporarily ineligible
