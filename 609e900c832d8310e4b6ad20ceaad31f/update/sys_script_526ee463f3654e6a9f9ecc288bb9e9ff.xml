@@ -36,8 +36,9 @@
     if (dob) {
         var birthDate = new GlideDateTime(dob);
         var now = new GlideDateTime();
-        var diffYears = gs.dateDiff(birthDate.toString(), now.toString(), true);
-        var ageInYears = Math.floor(parseInt(diffYears) / 365);
+        var duration = GlideDateTime.subtract(birthDate, now);
+        var diffDays = duration.getDayPart();
+        var ageInYears = Math.floor(diffDays / 365);
         if (ageInYears < 18) {
             gs.addErrorMessage('Donor must be at least 18 years old.');
             current.setAbortAction(true);
