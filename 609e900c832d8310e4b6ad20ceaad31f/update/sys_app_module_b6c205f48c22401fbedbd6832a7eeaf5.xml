@@ -6,7 +6,7 @@
     <active>true</active>
     <application>3c7f7e03827b4480a07ab25955d3adb5</application>
     <link_type>SEPARATOR</link_type>
-    <order>700</order>
+    <order>400</order>
     <title>Administration</title>
   </sys_app_module>
 </record_update>

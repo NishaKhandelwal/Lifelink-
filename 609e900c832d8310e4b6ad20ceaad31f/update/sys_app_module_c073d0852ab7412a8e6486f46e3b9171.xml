@@ -8,6 +8,7 @@
     <link_type>LIST</link_type>
     <name>x_1920732_lifeli_0_donation_history</name>
     <order>220</order>
+    <roles>x_1920732_lifeli_0.donor,x_1920732_lifeli_0.admin</roles>
     <title>Donation History</title>
   </sys_app_module>
 </record_update>

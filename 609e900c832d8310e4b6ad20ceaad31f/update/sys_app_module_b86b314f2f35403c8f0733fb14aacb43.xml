@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app_module">
   <sys_app_module action="INSERT_OR_UPDATE">
-    <sys_id>1c6c9aacd8bb4c2886347ecc31196237</sys_id>
+    <sys_id>b86b314f2f35403c8f0733fb14aacb43</sys_id>
     <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
-    <sys_update_name>sys_app_module_1c6c9aacd8bb4c2886347ecc31196237</sys_update_name>
+    <sys_update_name>sys_app_module_b86b314f2f35403c8f0733fb14aacb43</sys_update_name>
     <active>true</active>
     <application>3c7f7e03827b4480a07ab25955d3adb5</application>
-    <link_type>LIST</link_type>
-    <name>x_1920732_lifeli_0_organization</name>
-    <order>260</order>
+    <link_type>DIRECT</link_type>
+    <order>430</order>
+    <query>sys_properties_list.do?sysparm_query=nameLIKEx_1920732_lifeli_0</query>
     <roles>x_1920732_lifeli_0.admin</roles>
-    <title>Organizations</title>
+    <title>Properties</title>
   </sys_app_module>
 </record_update>

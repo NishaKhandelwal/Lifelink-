@@ -7,7 +7,8 @@
     <application>3c7f7e03827b4480a07ab25955d3adb5</application>
     <link_type>LIST</link_type>
     <name>x_1920732_lifeli_0_blood_inventory</name>
-    <order>310</order>
+    <order>230</order>
+    <roles>x_1920732_lifeli_0.blood_bank,x_1920732_lifeli_0.admin</roles>
     <title>Blood Inventory</title>
   </sys_app_module>
 </record_update>

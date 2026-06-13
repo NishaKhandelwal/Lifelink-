@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app_module">
   <sys_app_module action="INSERT_OR_UPDATE">
-    <sys_id>6231583b542149bd9f063925e4f9c8bc</sys_id>
+    <sys_id>aa33fdc5a81849f590a02972761209df</sys_id>
     <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
-    <sys_update_name>sys_app_module_6231583b542149bd9f063925e4f9c8bc</sys_update_name>
+    <sys_update_name>sys_app_module_aa33fdc5a81849f590a02972761209df</sys_update_name>
     <active>true</active>
     <application>3c7f7e03827b4480a07ab25955d3adb5</application>
-    <link_type>LIST</link_type>
-    <name>x_1920732_lifeli_0_blood_request</name>
-    <order>240</order>
+    <link_type>DIRECT</link_type>
+    <order>310</order>
+    <query>sys_report_list.do?sysparm_query=sys_scope=x_1920732_lifeli_0</query>
     <roles>x_1920732_lifeli_0.hospital,x_1920732_lifeli_0.blood_bank,x_1920732_lifeli_0.admin</roles>
-    <title>Blood Requests</title>
+    <title>Reports</title>
   </sys_app_module>
 </record_update>

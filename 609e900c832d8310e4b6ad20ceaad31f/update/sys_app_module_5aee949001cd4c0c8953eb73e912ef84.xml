@@ -7,7 +7,8 @@
     <application>3c7f7e03827b4480a07ab25955d3adb5</application>
     <link_type>DIRECT</link_type>
     <order>120</order>
-    <query>com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_catalog_view=catalog_default&amp;sysparm_id=</query>
+    <query>com.glideapp.servicecatalog_cat_item_view.do?v=1&amp;sysparm_catalog_view=catalog_default</query>
+    <roles>x_1920732_lifeli_0.hospital,x_1920732_lifeli_0.admin</roles>
     <title>Request Blood</title>
   </sys_app_module>
 </record_update>
