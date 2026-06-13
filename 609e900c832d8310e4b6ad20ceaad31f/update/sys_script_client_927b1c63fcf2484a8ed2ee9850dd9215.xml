@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_client">
+  <sys_script_client action="INSERT_OR_UPDATE">
+    <sys_id>927b1c63fcf2484a8ed2ee9850dd9215</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_script_client_927b1c63fcf2484a8ed2ee9850dd9215</sys_update_name>
+    <active>true</active>
+    <applies_extended>false</applies_extended>
+    <description/>
+    <field>weight</field>
+    <global>true</global>
+    <isolate_script>false</isolate_script>
+    <messages/>
+    <name>Validate Donor Weight</name>
+    <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading) return;
+    if (!newValue) return;
+
+    var weight = parseFloat(newValue);
+    if (isNaN(weight) || weight < 50) {
+        g_form.showFieldMsg('weight', 'Weight must be at least 50 kg.', 'error');
+    } else {
+        g_form.hideFieldMsg('weight');
+    }
+}
+]]></script>
+    <table>x_1920732_lifeli_0_donor_profile</table>
+    <type>onChange</type>
+    <ui_type>0</ui_type>
+    <view/>
+  </sys_script_client>
+</record_update>

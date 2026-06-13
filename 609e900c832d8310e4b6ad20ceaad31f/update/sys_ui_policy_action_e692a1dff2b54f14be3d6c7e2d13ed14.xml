@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+  <sys_ui_policy_action action="INSERT_OR_UPDATE">
+    <sys_id>e692a1dff2b54f14be3d6c7e2d13ed14</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_ui_policy_action_e692a1dff2b54f14be3d6c7e2d13ed14</sys_update_name>
+    <cleared>false</cleared>
+    <disabled>true</disabled>
+    <field>eligibility_status</field>
+    <field_message>This donor is currently ineligible to donate blood.</field_message>
+    <field_message_type>info</field_message_type>
+    <mandatory>ignore</mandatory>
+    <table>x_1920732_lifeli_0_donor_profile</table>
+    <ui_policy short_description="Make eligibility fields read-only when donor is not eligible" table="x_1920732_lifeli_0_donor_profile">b025f0084a614ac4ac94a23c2bd36697</ui_policy>
+    <value/>
+    <value_action>ignore</value_action>
+    <visible>ignore</visible>
+  </sys_ui_policy_action>
+</record_update>

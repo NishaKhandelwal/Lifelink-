@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script">
+  <sys_script action="INSERT_OR_UPDATE">
+    <sys_id>a3a0a9d5db2f4659a3becf5d9e2e3bca</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_script_a3a0a9d5db2f4659a3becf5d9e2e3bca</sys_update_name>
+    <abort_action>false</abort_action>
+    <access>package_private</access>
+    <action_delete>false</action_delete>
+    <action_insert>true</action_insert>
+    <action_query>false</action_query>
+    <action_update>false</action_update>
+    <active>true</active>
+    <add_message>false</add_message>
+    <advanced>true</advanced>
+    <change_fields>false</change_fields>
+    <client_callable>false</client_callable>
+    <collection>x_1920732_lifeli_0_donor_profile</collection>
+    <condition/>
+    <description/>
+    <execute_function>false</execute_function>
+    <filter_condition/>
+    <is_rest>false</is_rest>
+    <message/>
+    <name>Validate Logged-in User</name>
+    <order>50</order>
+    <priority>100</priority>
+    <rest_method/>
+    <rest_method_text/>
+    <rest_service/>
+    <rest_service_text/>
+    <rest_variables/>
+    <role_conditions/>
+    <script><![CDATA[(function executeRule(current, previous) {
+    var userId = current.getValue('user');
+    var currentUser = gs.getUserID();
+    
+    if (userId && userId !== currentUser && !gs.hasRole('x_1920732_lifeli_0.admin')) {
+        gs.addErrorMessage('You can only create a donor profile for yourself.');
+        current.setAbortAction(true);
+        return;
+    }
+    
+    // If user field is not set, set it to current user
+    if (!userId) {
+        current.setValue('user', currentUser);
+    }
+})(current, previous);
+]]></script>
+    <sys_policy/>
+    <template/>
+    <when>before</when>
+  </sys_script>
+</record_update>

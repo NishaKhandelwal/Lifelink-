@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+  <question_choice action="INSERT_OR_UPDATE">
+    <sys_id>f3256a7d356742ccb43a409aa2016b08</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>question_choice_f3256a7d356742ccb43a409aa2016b08</sys_update_name>
+    <inactive>false</inactive>
+    <order>2</order>
+    <question cat_item="fc7392ce7d8c44c0978982522ff1128f" name="donor_availability" variable_set="NULL">c9a685f07d5d4fb89c5d819e5353c992</question>
+    <text>Unavailable</text>
+    <value>unavailable</value>
+  </question_choice>
+</record_update>

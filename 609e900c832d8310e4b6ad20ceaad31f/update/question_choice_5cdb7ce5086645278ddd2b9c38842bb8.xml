@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+  <question_choice action="INSERT_OR_UPDATE">
+    <sys_id>5cdb7ce5086645278ddd2b9c38842bb8</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>question_choice_5cdb7ce5086645278ddd2b9c38842bb8</sys_update_name>
+    <inactive>false</inactive>
+    <order>3</order>
+    <question cat_item="fc7392ce7d8c44c0978982522ff1128f" name="donor_gender" variable_set="NULL">fdc34c7ac6fe4e5eb61daaceb251a231</question>
+    <text>Other</text>
+    <value>other</value>
+  </question_choice>
+</record_update>

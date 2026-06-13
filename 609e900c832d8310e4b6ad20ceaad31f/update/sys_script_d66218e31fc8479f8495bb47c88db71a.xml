@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script">
+  <sys_script action="INSERT_OR_UPDATE">
+    <sys_id>d66218e31fc8479f8495bb47c88db71a</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_script_d66218e31fc8479f8495bb47c88db71a</sys_update_name>
+    <abort_action>false</abort_action>
+    <access>package_private</access>
+    <action_delete>false</action_delete>
+    <action_insert>true</action_insert>
+    <action_query>false</action_query>
+    <action_update>false</action_update>
+    <active>true</active>
+    <add_message>false</add_message>
+    <advanced>true</advanced>
+    <change_fields>false</change_fields>
+    <client_callable>false</client_callable>
+    <collection>x_1920732_lifeli_0_donation_history</collection>
+    <condition/>
+    <description/>
+    <execute_function>false</execute_function>
+    <filter_condition/>
+    <is_rest>false</is_rest>
+    <message/>
+    <name>Update Eligibility After Donation</name>
+    <order>100</order>
+    <priority>100</priority>
+    <rest_method/>
+    <rest_method_text/>
+    <rest_service/>
+    <rest_service_text/>
+    <rest_variables/>
+    <role_conditions/>
+    <script><![CDATA[(function executeRule(current, previous) {
+    var donorId = current.getValue('donor');
+    if (!donorId) return;
+
+    var donor = new GlideRecord('x_1920732_lifeli_0_donor_profile');
+    if (donor.get(donorId)) {
+        // Update last donation date
+        var donationDate = current.getValue('donation_date');
+        donor.setValue('last_donation_date', donationDate);
+
+        // Calculate next eligible date (donation date + 90 days)
+        var nextDate = new GlideDateTime(donationDate);
+        nextDate.addDaysUTC(90);
+        donor.setValue('next_eligible_date', nextDate.getValue());
+
+        // Set eligibility status to temporarily ineligible
+        donor.setValue('eligibility_status', 'temporarily_ineligible');
+
+        donor.update();
+    }
+})(current, previous);
+]]></script>
+    <sys_policy/>
+    <template/>
+    <when>after</when>
+  </sys_script>
+</record_update>
