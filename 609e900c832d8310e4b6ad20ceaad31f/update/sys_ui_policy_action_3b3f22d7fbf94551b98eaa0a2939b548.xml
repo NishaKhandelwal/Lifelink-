@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+  <sys_ui_policy_action action="INSERT_OR_UPDATE">
+    <sys_id>3b3f22d7fbf94551b98eaa0a2939b548</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_ui_policy_action_3b3f22d7fbf94551b98eaa0a2939b548</sys_update_name>
+    <cleared>false</cleared>
+    <disabled>true</disabled>
+    <field>needed_before</field>
+    <field_message/>
+    <field_message_type>none</field_message_type>
+    <mandatory>ignore</mandatory>
+    <table>x_1920732_lifeli_0_blood_request</table>
+    <ui_policy short_description="Lock request details after submission" table="x_1920732_lifeli_0_blood_request">0ee813d6e7764a74bd267adc0626789b</ui_policy>
+    <value/>
+    <value_action>ignore</value_action>
+    <visible>ignore</visible>
+  </sys_ui_policy_action>
+</record_update>

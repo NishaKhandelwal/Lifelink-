@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+  <sys_ui_policy_action action="INSERT_OR_UPDATE">
+    <sys_id>0c8ad1f372e444e685355248075b0c9e</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_ui_policy_action_0c8ad1f372e444e685355248075b0c9e</sys_update_name>
+    <cleared>false</cleared>
+    <disabled>ignore</disabled>
+    <field>emergency_level</field>
+    <field_message>CRITICAL: This request requires immediate high-priority handling.</field_message>
+    <field_message_type>warning</field_message_type>
+    <mandatory>ignore</mandatory>
+    <table>x_1920732_lifeli_0_blood_request</table>
+    <ui_policy short_description="Highlight critical emergency level requests" table="x_1920732_lifeli_0_blood_request">5ff19ff26c144896b80afa3aec403f9c</ui_policy>
+    <value/>
+    <value_action>ignore</value_action>
+    <visible>ignore</visible>
+  </sys_ui_policy_action>
+</record_update>

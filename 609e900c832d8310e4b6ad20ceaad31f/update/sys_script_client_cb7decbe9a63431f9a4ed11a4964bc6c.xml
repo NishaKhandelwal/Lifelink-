@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_client">
+  <sys_script_client action="INSERT_OR_UPDATE">
+    <sys_id>cb7decbe9a63431f9a4ed11a4964bc6c</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_script_client_cb7decbe9a63431f9a4ed11a4964bc6c</sys_update_name>
+    <active>true</active>
+    <applies_extended>false</applies_extended>
+    <description/>
+    <field>units_required</field>
+    <global>true</global>
+    <isolate_script>false</isolate_script>
+    <messages/>
+    <name>Validate Blood Request Units</name>
+    <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading) return;
+    if (!newValue) return;
+
+    var units = parseInt(newValue);
+    if (isNaN(units) || units <= 0) {
+        g_form.showFieldMsg('units_required', 'Units Required must be greater than zero.', 'error');
+    } else {
+        g_form.hideFieldMsg('units_required');
+    }
+}
+]]></script>
+    <table>x_1920732_lifeli_0_blood_request</table>
+    <type>onChange</type>
+    <ui_type>0</ui_type>
+    <view/>
+  </sys_script_client>
+</record_update>

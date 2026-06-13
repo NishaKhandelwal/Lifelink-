@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_report">
+  <sys_report action="INSERT_OR_UPDATE">
+    <sys_id>5cdaa2d9fe9e44f7b1c6daeee21b0544</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_report_5cdaa2d9fe9e44f7b1c6daeee21b0544</sys_update_name>
+    <description>Displays all blood requests in Pending or Assigned state.</description>
+    <field>state</field>
+    <filter>stateIN1,2</filter>
+    <table>x_1920732_lifeli_0_blood_request</table>
+    <title>Active Blood Requests</title>
+    <type>list</type>
+  </sys_report>
+</record_update>

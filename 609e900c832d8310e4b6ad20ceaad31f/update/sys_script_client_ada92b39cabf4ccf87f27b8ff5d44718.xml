@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_client">
+  <sys_script_client action="INSERT_OR_UPDATE">
+    <sys_id>ada92b39cabf4ccf87f27b8ff5d44718</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>sys_script_client_ada92b39cabf4ccf87f27b8ff5d44718</sys_update_name>
+    <active>true</active>
+    <applies_extended>false</applies_extended>
+    <description/>
+    <field>needed_before</field>
+    <global>true</global>
+    <isolate_script>false</isolate_script>
+    <messages/>
+    <name>Validate Needed Before Date</name>
+    <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+    if (isLoading) return;
+    if (!newValue) return;
+
+    var selectedDate = new Date(newValue);
+    var now = new Date();
+
+    if (selectedDate <= now) {
+        g_form.showFieldMsg('needed_before', 'Needed Before must be a future date/time.', 'error');
+    } else {
+        g_form.hideFieldMsg('needed_before');
+    }
+}
+]]></script>
+    <table>x_1920732_lifeli_0_blood_request</table>
+    <type>onChange</type>
+    <ui_type>0</ui_type>
+    <view/>
+  </sys_script_client>
+</record_update>

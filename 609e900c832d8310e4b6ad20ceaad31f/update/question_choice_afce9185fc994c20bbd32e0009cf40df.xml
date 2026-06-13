@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
+  <question_choice action="INSERT_OR_UPDATE">
+    <sys_id>afce9185fc994c20bbd32e0009cf40df</sys_id>
+    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+    <sys_update_name>question_choice_afce9185fc994c20bbd32e0009cf40df</sys_update_name>
+    <inactive>false</inactive>
+    <order>4</order>
+    <question cat_item="9edfd85ef55a42ba8661244bfdf6eca9" name="req_blood_group" variable_set="NULL">34f35c285274497582b367b48d19bed3</question>
+    <text>B-</text>
+    <value>b_negative</value>
+  </question_choice>
+</record_update>
