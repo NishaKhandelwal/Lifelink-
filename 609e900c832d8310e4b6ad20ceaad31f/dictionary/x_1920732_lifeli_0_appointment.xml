@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="4194af2211e245acb166becda5a40dde" extends="task" label="Appointment" name="x_1920732_lifeli_0_appointment" type="collection">
+        <element label="Appointment Date" mandatory="true" max_length="40" name="appointment_date" type="glide_date_time"/>
+        <element label="Donor" mandatory="true" max_length="32" name="donor" reference="x_1920732_lifeli_0_donor_profile" reference_qual="javascript:'eligibility_status=eligible^blood_group=' + current.blood_request.blood_group" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Blood Request" mandatory="true" max_length="32" name="blood_request" reference="x_1920732_lifeli_0_blood_request" reference_qual="state=2" type="reference" use_reference_qualifier="advanced"/>
+        <element choice="3" default="scheduled" label="Appointment Status" mandatory="true" max_length="40" name="appointment_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Scheduled" sequence="0" value="scheduled"/>
+                <element inactive_on_update="false" label="No Show" sequence="3" value="no_show"/>
+                <element inactive_on_update="false" label="Cancelled" sequence="2" value="cancelled"/>
+                <element inactive_on_update="false" label="Completed" sequence="1" value="completed"/>
+            </choice>
+        </element>
+        <element label="Blood Bank" mandatory="true" max_length="32" name="blood_bank" reference="x_1920732_lifeli_0_organization" reference_qual="organization_type=blood_bank" type="reference" use_reference_qualifier="advanced"/>
+    </element>
+</database>

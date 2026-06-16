@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
-  <sys_security_acl action="INSERT_OR_UPDATE">
-    <sys_id>2241a6f198204856b0e90747149d5da2</sys_id>
-    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
-    <sys_update_name>sys_security_acl_2241a6f198204856b0e90747149d5da2</sys_update_name>
-    <active>true</active>
-    <admin_overrides>true</admin_overrides>
-    <advanced>true</advanced>
-    <applies_to/>
-    <condition/>
-    <decision_type>allow</decision_type>
-    <description/>
-    <local_or_existing>Local</local_or_existing>
-    <name>x_1920732_lifeli_0_appointment</name>
-    <operation>read</operation>
-    <script><![CDATA[
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>true</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description/>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_1920732_lifeli_0_appointment</name>
+        <operation display_value="read">read</operation>
+        <script><![CDATA[
     (function executeRule(current, previous) {
       if (gs.hasRole('x_1920732_lifeli_0.admin') || gs.hasRole('x_1920732_lifeli_0.hospital')) {
         answer = true;
@@ -22,7 +20,19 @@
       answer = current.blood_bank.user == gs.getUserID() || current.donor.user == gs.getUserID();
     })(current, previous);
   ]]></script>
-    <security_attribute/>
-    <type>record</type>
-  </sys_security_acl>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 05:26:12</sys_created_on>
+        <sys_id>2241a6f198204856b0e90747149d5da2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1920732_lifeli_0_appointment</sys_name>
+        <sys_package display_value="LifeLink" source="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_update_name>sys_security_acl_2241a6f198204856b0e90747149d5da2</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 05:26:12</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
 </record_update>

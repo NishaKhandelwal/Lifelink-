@@ -1,17 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_client">
-  <sys_script_client action="INSERT_OR_UPDATE">
-    <sys_id>f20d66ed2b0540fda8c830c1f5e572c3</sys_id>
-    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
-    <sys_update_name>sys_script_client_f20d66ed2b0540fda8c830c1f5e572c3</sys_update_name>
-    <active>true</active>
-    <applies_extended>false</applies_extended>
-    <description/>
-    <field/>
-    <global>true</global>
-    <isolate_script>false</isolate_script>
-    <messages/>
-    <name>Validate Emergency Contact</name>
-    <script><![CDATA[function onSubmit() {
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field/>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Validate Emergency Contact</name>
+        <order/>
+        <script><![CDATA[function onSubmit() {
     var emergencyContact = g_form.getValue('emergency_contact');
     if (!emergencyContact || emergencyContact.trim() === '') {
         g_form.showFieldMsg('emergency_contact', 'Emergency Contact is required.', 'error');
@@ -20,9 +19,24 @@
     return true;
 }
 ]]></script>
-    <table>x_1920732_lifeli_0_donor_profile</table>
-    <type>onSubmit</type>
-    <ui_type>0</ui_type>
-    <view/>
-  </sys_script_client>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 05:38:44</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>f20d66ed2b0540fda8c830c1f5e572c3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Validate Emergency Contact</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="LifeLink" source="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_update_name>sys_script_client_f20d66ed2b0540fda8c830c1f5e572c3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 05:38:44</sys_updated_on>
+        <table>x_1920732_lifeli_0_donor_profile</table>
+        <type>onSubmit</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
 </record_update>

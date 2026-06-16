@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
-  <sys_security_acl_role action="INSERT_OR_UPDATE">
-    <sys_id>b88e01730d0f456db6e96f91059c9d51</sys_id>
-    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
-    <sys_update_name>sys_security_acl_role_b88e01730d0f456db6e96f91059c9d51</sys_update_name>
-    <sys_security_acl>4d2e1cd635724a22954688262657bd50</sys_security_acl>
-    <sys_user_role name="x_1920732_lifeli_0.admin">c6af3a7a8700400fbf29900ae7d24ab5</sys_user_role>
-  </sys_security_acl_role>
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 05:15:20</sys_created_on>
+        <sys_id>b88e01730d0f456db6e96f91059c9d51</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1920732_lifeli_0_organization.</sys_name>
+        <sys_package display_value="LifeLink" source="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_security_acl display_value="x_1920732_lifeli_0_organization">4d2e1cd635724a22954688262657bd50</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_b88e01730d0f456db6e96f91059c9d51</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 05:15:20</sys_updated_on>
+        <sys_user_role display_value="x_1920732_lifeli_0.admin" name="x_1920732_lifeli_0.admin">c6af3a7a8700400fbf29900ae7d24ab5</sys_user_role>
+    </sys_security_acl_role>
 </record_update>

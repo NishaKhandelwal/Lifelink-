@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="54caabfc5fe44f0ab9169e1beea847ae" label="Donation History" name="x_1920732_lifeli_0_donation_history" type="collection">
+        <element choice="3" label="Blood Group" mandatory="true" max_length="40" name="blood_group" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="O+" sequence="6" value="o_positive"/>
+                <element inactive_on_update="false" label="A+" sequence="0" value="a_positive"/>
+                <element inactive_on_update="false" label="B+" sequence="2" value="b_positive"/>
+                <element inactive_on_update="false" label="A-" sequence="1" value="a_negative"/>
+                <element inactive_on_update="false" label="AB+" sequence="4" value="ab_positive"/>
+                <element inactive_on_update="false" label="O-" sequence="7" value="o_negative"/>
+                <element inactive_on_update="false" label="AB-" sequence="5" value="ab_negative"/>
+                <element inactive_on_update="false" label="B-" sequence="3" value="b_negative"/>
+            </choice>
+        </element>
+        <element label="Donation Date" mandatory="true" max_length="40" name="donation_date" type="glide_date"/>
+        <element label="Blood Request" max_length="32" name="blood_request" reference="x_1920732_lifeli_0_blood_request" type="reference"/>
+        <element label="Units Donated" mandatory="true" max_length="40" name="units_donated" type="integer"/>
+        <element label="Blood Bank" mandatory="true" max_length="32" name="blood_bank" reference="x_1920732_lifeli_0_organization" reference_qual="organization_type=blood_bank" type="reference" use_reference_qualifier="advanced"/>
+        <element default="javascript:global.getNextObjNumberPadded();" display="true" label="Donation Number" mandatory="true" max_length="40" name="number" read_only="true" read_only_option="instance_configured" type="string"/>
+        <element label="Donor" mandatory="true" max_length="32" name="donor" reference="x_1920732_lifeli_0_donor_profile" type="reference"/>
+        <element label="Remarks" max_length="40" name="remarks" type="journal_input"/>
+        <index name="index">
+            <element name="blood_bank"/>
+        </index>
+        <index name="index2">
+            <element name="blood_request"/>
+        </index>
+        <index name="index3">
+            <element name="donor"/>
+        </index>
+    </element>
+</database>

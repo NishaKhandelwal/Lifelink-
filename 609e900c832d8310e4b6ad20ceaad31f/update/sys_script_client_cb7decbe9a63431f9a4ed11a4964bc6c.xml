@@ -1,17 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_client">
-  <sys_script_client action="INSERT_OR_UPDATE">
-    <sys_id>cb7decbe9a63431f9a4ed11a4964bc6c</sys_id>
-    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
-    <sys_update_name>sys_script_client_cb7decbe9a63431f9a4ed11a4964bc6c</sys_update_name>
-    <active>true</active>
-    <applies_extended>false</applies_extended>
-    <description/>
-    <field>units_required</field>
-    <global>true</global>
-    <isolate_script>false</isolate_script>
-    <messages/>
-    <name>Validate Blood Request Units</name>
-    <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>units_required</field>
+        <global>true</global>
+        <isolate_script>false</isolate_script>
+        <messages/>
+        <name>Validate Blood Request Units</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading) {
     if (isLoading) return;
     if (!newValue) return;
 
@@ -23,9 +22,24 @@
     }
 }
 ]]></script>
-    <table>x_1920732_lifeli_0_blood_request</table>
-    <type>onChange</type>
-    <ui_type>0</ui_type>
-    <view/>
-  </sys_script_client>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 05:58:23</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>cb7decbe9a63431f9a4ed11a4964bc6c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Validate Blood Request Units</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="LifeLink" source="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_update_name>sys_script_client_cb7decbe9a63431f9a4ed11a4964bc6c</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 05:58:23</sys_updated_on>
+        <table>x_1920732_lifeli_0_blood_request</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
 </record_update>

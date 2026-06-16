@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d6b7d2fa80da4908acda9bea65046aaa" label="Organization" name="x_1920732_lifeli_0_organization" type="collection">
+        <element label="State" mandatory="true" max_length="40" name="state" type="string"/>
+        <element label="City" mandatory="true" max_length="40" name="city" type="string"/>
+        <element label="Email" mandatory="true" max_length="255" name="email" type="email"/>
+        <element choice="3" default="active" label="Status" mandatory="true" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Active" sequence="0" value="active"/>
+                <element inactive_on_update="false" label="Inactive" sequence="1" value="inactive"/>
+            </choice>
+        </element>
+        <element display="true" label="Organization Name" mandatory="true" max_length="100" name="name" type="string"/>
+        <element label="Postal Code" max_length="40" name="postal_code" type="string"/>
+        <element label="Notes" max_length="40" name="notes" type="journal_input"/>
+        <element default="javascript:global.getNextObjNumberPadded();" label="Organization Number" mandatory="true" max_length="40" name="number" read_only="true" read_only_option="instance_configured" type="string"/>
+        <element label="Contact Person" mandatory="true" max_length="32" name="contact_person" reference="sys_user" type="reference"/>
+        <element label="User" mandatory="true" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <element label="Registration Number" mandatory="true" max_length="50" name="registration_number" type="string"/>
+        <element label="Phone" mandatory="true" max_length="40" name="phone" type="ph_number"/>
+        <element label="Address" mandatory="true" max_length="255" name="address" type="string"/>
+        <element choice="3" default="hospital" label="Organization Type" mandatory="true" max_length="40" name="organization_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Blood Bank" sequence="1" value="blood_bank"/>
+                <element inactive_on_update="false" label="Hospital" sequence="0" value="hospital"/>
+            </choice>
+        </element>
+        <index name="index">
+            <element name="contact_person"/>
+        </index>
+        <index name="index2">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

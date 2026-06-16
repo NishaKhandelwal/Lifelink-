@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="c06a6b741dbe43a5b8d1ecddff9e2bec" label="Donor Profile" name="x_1920732_lifeli_0_donor_profile" type="collection">
+        <element choice="3" label="Blood Group" mandatory="true" max_length="40" name="blood_group" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="A+" sequence="0" value="a_positive"/>
+                <element inactive_on_update="false" label="O+" sequence="6" value="o_positive"/>
+                <element inactive_on_update="false" label="A-" sequence="1" value="a_negative"/>
+                <element inactive_on_update="false" label="O-" sequence="7" value="o_negative"/>
+                <element inactive_on_update="false" label="AB-" sequence="5" value="ab_negative"/>
+                <element inactive_on_update="false" label="AB+" sequence="4" value="ab_positive"/>
+                <element inactive_on_update="false" label="B-" sequence="3" value="b_negative"/>
+                <element inactive_on_update="false" label="B+" sequence="2" value="b_positive"/>
+            </choice>
+        </element>
+        <element label="Last Donation Date" max_length="40" name="last_donation_date" type="glide_date"/>
+        <element default="javascript:global.getNextObjNumberPadded();" label="Donor Number" mandatory="true" max_length="40" name="number" read_only="true" read_only_option="instance_configured" type="string"/>
+        <element choice="3" default="eligible" label="Eligibility Status" mandatory="true" max_length="40" name="eligibility_status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Eligible" sequence="0" value="eligible"/>
+                <element inactive_on_update="false" label="Permanently Ineligible" sequence="2" value="permanently_ineligible"/>
+                <element inactive_on_update="false" label="Temporarily Ineligible" sequence="1" value="temporarily_ineligible"/>
+            </choice>
+        </element>
+        <element label="City" mandatory="true" max_length="40" name="city" type="string"/>
+        <element label="Emergency Contact" mandatory="true" max_length="40" name="emergency_contact" type="ph_number"/>
+        <element choice="3" label="Gender" mandatory="true" max_length="40" name="gender" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Male" sequence="0" value="male"/>
+                <element inactive_on_update="false" label="Other" sequence="2" value="other"/>
+                <element inactive_on_update="false" label="Female" sequence="1" value="female"/>
+            </choice>
+        </element>
+        <element display="true" label="User" mandatory="true" max_length="32" name="user" reference="sys_user" type="reference"/>
+        <element label="Date of Birth" mandatory="true" max_length="40" name="dob" type="glide_date"/>
+        <element label="Weight" mandatory="true" max_length="20" name="weight" type="decimal"/>
+        <element choice="3" default="available" label="Availability" mandatory="true" max_length="40" name="availability" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Available" sequence="0" value="available"/>
+                <element inactive_on_update="false" label="Unavailable" sequence="1" value="unavailable"/>
+            </choice>
+        </element>
+        <element label="Next Eligible Date" max_length="40" name="next_eligible_date" type="glide_date"/>
+        <element label="Remarks" max_length="40" name="remarks" type="journal_input"/>
+        <index name="index">
+            <element name="user"/>
+        </index>
+    </element>
+</database>

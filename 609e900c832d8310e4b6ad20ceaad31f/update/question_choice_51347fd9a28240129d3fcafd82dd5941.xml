@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="question_choice">
-  <question_choice action="INSERT_OR_UPDATE">
-    <sys_id>51347fd9a28240129d3fcafd82dd5941</sys_id>
-    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
-    <sys_update_name>question_choice_51347fd9a28240129d3fcafd82dd5941</sys_update_name>
-    <inactive>false</inactive>
-    <order>2</order>
-    <question cat_item="fc7392ce7d8c44c0978982522ff1128f" name="donor_blood_group" variable_set="NULL">424999b15eaf4ab7a48e70b5fb05b9f2</question>
-    <text>A-</text>
-    <value>a_negative</value>
-  </question_choice>
+    <question_choice action="INSERT_OR_UPDATE">
+        <inactive>false</inactive>
+        <order>2</order>
+        <published_ref/>
+        <question display_value="Blood Group">424999b15eaf4ab7a48e70b5fb05b9f2</question>
+        <sys_class_name>question_choice</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 05:38:25</sys_created_on>
+        <sys_id>51347fd9a28240129d3fcafd82dd5941</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>A-</sys_name>
+        <sys_package display_value="LifeLink" source="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_update_name>question_choice_51347fd9a28240129d3fcafd82dd5941</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 05:38:25</sys_updated_on>
+        <text>A-</text>
+        <value>a_negative</value>
+    </question_choice>
+    <fx_price action="delete_multiple" query="id=51347fd9a28240129d3fcafd82dd5941"/>
 </record_update>

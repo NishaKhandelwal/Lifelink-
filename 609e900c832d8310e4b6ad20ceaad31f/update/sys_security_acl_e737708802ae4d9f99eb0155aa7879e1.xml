@@ -1,20 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl">
-  <sys_security_acl action="INSERT_OR_UPDATE">
-    <sys_id>e737708802ae4d9f99eb0155aa7879e1</sys_id>
-    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
-    <sys_update_name>sys_security_acl_e737708802ae4d9f99eb0155aa7879e1</sys_update_name>
-    <active>true</active>
-    <admin_overrides>true</admin_overrides>
-    <advanced>false</advanced>
-    <applies_to/>
-    <condition/>
-    <decision_type>allow</decision_type>
-    <description/>
-    <local_or_existing>Local</local_or_existing>
-    <name>x_1920732_lifeli_0_organization</name>
-    <operation>delete</operation>
-    <script/>
-    <security_attribute/>
-    <type>record</type>
-  </sys_security_acl>
+    <sys_security_acl action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <admin_overrides>true</admin_overrides>
+        <advanced>false</advanced>
+        <applies_to/>
+        <condition/>
+        <controlled_by_refs/>
+        <decision_type>allow</decision_type>
+        <description/>
+        <local_or_existing>Local</local_or_existing>
+        <name>x_1920732_lifeli_0_organization</name>
+        <operation display_value="delete">delete</operation>
+        <script/>
+        <security_attribute/>
+        <sys_class_name>sys_security_acl</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 05:15:19</sys_created_on>
+        <sys_id>e737708802ae4d9f99eb0155aa7879e1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_1920732_lifeli_0_organization</sys_name>
+        <sys_package display_value="LifeLink" source="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_update_name>sys_security_acl_e737708802ae4d9f99eb0155aa7879e1</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 05:15:19</sys_updated_on>
+        <type display_value="record">record</type>
+    </sys_security_acl>
 </record_update>

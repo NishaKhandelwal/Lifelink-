@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="02d06198bbf4405ab2afa8e1e7b79c1e" label="Blood Inventory" name="x_1920732_lifeli_0_blood_inventory" type="collection">
+        <element label="Last Updated" mandatory="true" max_length="40" name="last_updated" type="glide_date_time"/>
+        <element label="Units Available" mandatory="true" max_length="40" name="units_available" type="integer"/>
+        <element label="Remarks" max_length="40" name="remarks" type="journal_input"/>
+        <element choice="3" label="Blood Group" mandatory="true" max_length="40" name="blood_group" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="AB+" sequence="4" value="ab_positive"/>
+                <element inactive_on_update="false" label="O+" sequence="6" value="o_positive"/>
+                <element inactive_on_update="false" label="AB-" sequence="5" value="ab_negative"/>
+                <element inactive_on_update="false" label="O-" sequence="7" value="o_negative"/>
+                <element inactive_on_update="false" label="A+" sequence="0" value="a_positive"/>
+                <element inactive_on_update="false" label="A-" sequence="1" value="a_negative"/>
+                <element inactive_on_update="false" label="B+" sequence="2" value="b_positive"/>
+                <element inactive_on_update="false" label="B-" sequence="3" value="b_negative"/>
+            </choice>
+        </element>
+        <element default="javascript:global.getNextObjNumberPadded();" display="true" label="Inventory Number" mandatory="true" max_length="40" name="number" read_only="true" read_only_option="instance_configured" type="string"/>
+        <element label="Expiry Date" mandatory="true" max_length="40" name="expiry_date" type="glide_date"/>
+        <element label="Blood Bank" mandatory="true" max_length="32" name="blood_bank" reference="x_1920732_lifeli_0_organization" reference_qual="organization_type=blood_bank" type="reference" use_reference_qualifier="advanced"/>
+        <index name="index">
+            <element name="blood_bank"/>
+        </index>
+    </element>
+</database>

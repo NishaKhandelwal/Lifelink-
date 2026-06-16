@@ -1,18 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
-  <sys_ui_policy_action action="INSERT_OR_UPDATE">
-    <sys_id>ccbd0bccbd6c4bafa1c66bea6d8e6092</sys_id>
-    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
-    <sys_update_name>sys_ui_policy_action_ccbd0bccbd6c4bafa1c66bea6d8e6092</sys_update_name>
-    <cleared>false</cleared>
-    <disabled>true</disabled>
-    <field>blood_bank</field>
-    <field_message/>
-    <field_message_type>none</field_message_type>
-    <mandatory>ignore</mandatory>
-    <table>x_1920732_lifeli_0_blood_inventory</table>
-    <ui_policy short_description="Make Blood Bank and Blood Group read-only on existing records" table="x_1920732_lifeli_0_blood_inventory">ee74d8aa2506401f826710c3e2b52e36</ui_policy>
-    <value/>
-    <value_action>ignore</value_action>
-    <visible>ignore</visible>
-  </sys_ui_policy_action>
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>blood_bank</field>
+        <field_message/>
+        <field_message_type>none</field_message_type>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 05:49:41</sys_created_on>
+        <sys_id>ccbd0bccbd6c4bafa1c66bea6d8e6092</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>blood_bank</sys_name>
+        <sys_package display_value="LifeLink" source="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_update_name>sys_ui_policy_action_ccbd0bccbd6c4bafa1c66bea6d8e6092</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 05:49:41</sys_updated_on>
+        <table>x_1920732_lifeli_0_blood_inventory</table>
+        <ui_policy display_value="Make Blood Bank and Blood Group read-only on existing records">ee74d8aa2506401f826710c3e2b52e36</ui_policy>
+        <value/>
+        <value_action>ignore</value_action>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_translated_text action="delete_multiple" query="documentkey=ccbd0bccbd6c4bafa1c66bea6d8e6092"/>
 </record_update>

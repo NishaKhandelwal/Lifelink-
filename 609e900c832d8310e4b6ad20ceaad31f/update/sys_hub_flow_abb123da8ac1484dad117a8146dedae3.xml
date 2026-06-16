@@ -1,93 +1,1040 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update>
-  <sys_hub_flow action="INSERT_OR_UPDATE">
-    <sys_id>abb123da8ac1484dad117a8146dedae3</sys_id>
-    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
-    <sys_update_name>sys_hub_flow_abb123da8ac1484dad117a8146dedae3</sys_update_name>
-    <access>public</access>
-    <active>false</active>
-    <annotation/>
-    <category/>
-    <description>Notify blood banks when inventory reaches critical level (≤ 5 units).</description>
-    <flow_priority>MEDIUM</flow_priority>
-    <generation_source>fluent</generation_source>
-    <internal_name>low_stock_monitoring</internal_name>
-    <label_cache>[{"name":"Updated_1.current","label":"Trigger - Record Updated➛x_1920732_lifeli_0_blood_inventory Record","type":"reference","base_type":"reference","usedInstances":{"53d1feb3-94f2-4d77-93ec-6a4cfa13d807":["record"],"f1cf32b1-d285-4387-8047-cab2aaf626ae":["record"]},"attributes":{}},{"name":"Updated_1.current.blood_bank.user.email","label":"Trigger - Record Updated➛x_1920732_lifeli_0_blood_inventory Record➛Blood Bank➛User➛Email","type":"string","base_type":"string","usedInstances":{"f1cf32b1-d285-4387-8047-cab2aaf626ae":["recipient_email"]},"attributes":{}}]</label_cache>
-    <name>Low Stock Monitoring</name>
-    <run_as>system</run_as>
-    <run_with_roles/>
-    <show_draft_actions>false</show_draft_actions>
-    <status>draft</status>
-    <sys_policy/>
-    <type>flow</type>
-    <version>2</version>
-  <version_record/>
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_flow">
+    <sys_hub_flow action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>timeFromCreateToActivate=42524000</attributes>
+        <authored_on_release_version/>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Notify blood banks when inventory reaches critical level (≤ 5 units).</description>
+        <display_name_after_preview/>
+        <flow_priority>MEDIUM</flow_priority>
+        <generation_source>fluent</generation_source>
+        <internal_name>low_stock_monitoring</internal_name>
+        <label_cache>[{"name":"Updated_1.current","label":"Trigger - Record Updated➛x_1920732_lifeli_0_blood_inventory Record","type":"reference","base_type":"reference","usedInstances":{"53d1feb3-94f2-4d77-93ec-6a4cfa13d807":["record"],"f1cf32b1-d285-4387-8047-cab2aaf626ae":["record"]},"attributes":{}},{"name":"Updated_1.current.blood_bank.user.email","label":"Trigger - Record Updated➛x_1920732_lifeli_0_blood_inventory Record➛Blood Bank➛User➛Email","type":"string","base_type":"string","usedInstances":{"f1cf32b1-d285-4387-8047-cab2aaf626ae":["recipient_email"]},"attributes":{}}]</label_cache>
+        <master_snapshot>92d3db4483650710e4b6ad20ceaad302</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Low Stock Monitoring</name>
+        <natlang/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <remote_trigger_id>7ad3db4483650710e4b6ad20ceaad3aa</remote_trigger_id>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <show_draft_actions>false</show_draft_actions>
+        <show_triggered_flows>false</show_triggered_flows>
+        <status>published</status>
+        <substatus/>
+        <sys_class_name>sys_hub_flow</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 06:23:19</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>abb123da8ac1484dad117a8146dedae3</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>Low Stock Monitoring</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="LifeLink" source="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_update_name>sys_hub_flow_abb123da8ac1484dad117a8146dedae3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 18:12:05</sys_updated_on>
+        <type>flow</type>
+        <updation_source/>
+        <version>2</version>
+        <version_record/>
     </sys_hub_flow>
-  <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=abb123da8ac1484dad117a8146dedae3^sys_idNOT INd49f4cdba7aa48fc809f13fdb93b4f78"/>
-  <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
-    <sys_id>d49f4cdba7aa48fc809f13fdb93b4f78</sys_id>
-    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
-    <category/>
-    <comment/>
-    <flow>abb123da8ac1484dad117a8146dedae3</flow>
-    <name>Updated</name>
-    <trigger_definition>bb695e60c31322002841b63b12d3aea5</trigger_definition>
-    <trigger_inputs>H4sIAAAAAAAAA71X22obMRD9FaGnFraQpJRS0z60TQOGtIEmbR9CEPJqdi0qj1xp1s4S/O9Fe0n2FseJN3kyHkkzZ86ckWYvbzg5nabgpuhJYgznuZ8qPuE84kbOwPAJv5AzAzziGgkcSnORL4FPOAWzQLkIawqWgAqQyqPx3OoYTrUnPrm8ivhCopJkXc4n5DKIuHUKHJ8cHhxEvHBR+eMRX0mThf/X4vDD0cH7t0fC6ASMFgdiZqxVQuMKsHAWcaX90sj89xPOnGgwVaY+dnpJn2PSK+CTRBoPIQdtlAMsM1hKJxdAAfQNpwEGOlm0ydtsol2Y/pkh+zMHZL88OFbQ16M9NVqBMOXa7rRXSQ3w7jIU6zmgyDy42nFdhD7FuxNY+Ghk+TChrdy2wdtKmCRyepYR+OBaqlVgO2AI0uObx9biHLzXNvwSaUz7FSlZf6AaNzypGSyOy5KriCenVcAzNDkLURPrynymdxtrFOHAdCHTqhLJORiIKWRXkZ788s1/37X3AXRpCJnfwkCLYhcoPyy+eV4kM0vzZvg68hdL8xYJEtV9cPyeeB7dLf5WDqt2Gp1+aVv3v3Ru1XY/oB0kPF6PJMau2RT3bwuJeU8EwbdGJjFnsUWCaxpRdol1kDqbobovbnvHWGqX8d/tYe92sFcKEpkZev2C8g4whMamspuQu/oeWHseld/hGtbfeJo+Q/btmoJoFSsecL+/vAsQnYJbZHHmHCAVVxvUMamOOZrUg6Uf3eRNCPXo8lI6syjqjBtaq6F2ZNYxP4/C2ogeVMQ4gvtqUWkqX9SuxuolP9KsFzdi1YRnqMkLuZLahMQ+fnrXZ3/bnhFK0UxzAOkQU23u1xLJC7JCKiUa7m7bbmEVmOMGg1VdhMZlRp5vGvwKi41BPvMgGtQHf0+a5kcbH4feSeuKNzKMyCPeGhZB2GRwMNQJqwgAxWY5ozmwxBpj1xrTAseY1xfaUJQumGPL0BJzLwLnaV9T/SGxrF6nvVrGZxwRO5geEup4D+pFuWt/8Weo/2Ug4rnEtHwhazWcWMdAxnNWbmHlllG7Ie58JMVjuocVuLyXUDCybKkkjRlLmrXMfa+xdVI0VDUPmDy0FpZSeInWqa9kT04SpHmja2pyOn3TMY/fOQOQhmS92Vz9B25XgBJKEwAA</trigger_inputs>
-    <trigger_outputs/>
-    <trigger_type>record_update</trigger_type>
-  </sys_hub_trigger_instance_v2>
-  <sys_hub_action_instance_v2 action="delete_multiple" query="flow=abb123da8ac1484dad117a8146dedae3^sys_idNOT IN53d1feb394f24d7793ec6a4cfa13d807,155fd86348884ced8be91873f04a76ab"/>
-  <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-    <sys_id>53d1feb394f24d7793ec6a4cfa13d807</sys_id>
-    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
-    <action_type>80a30edeff30311077a95dac793bf19b</action_type>
-    <action_type_parent>80a30edeff30311077a95dac793bf19b</action_type_parent>
-    <active>true</active>
-    <comment>Fire low stock event</comment>
-    <display_text/>
-    <flow>abb123da8ac1484dad117a8146dedae3</flow>
-    <generation_source/>
-    <order>1</order>
-    <parent_ui_id/>
-    <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-    <ui_id>53d1feb3-94f2-4d77-93ec-6a4cfa13d807</ui_id>
-    <updation_source/>
-    <values>H4sIAAAAAAAAA5XQwQqCQBAG4HeZs4jWIfLWQ9QlYlh3R1had5dxtER897BACinsODA/fP9/HsCrmqAAUaUjSKBTrp3uO+b7TbbbbtDZipzFDEsXgkHrO/ISuIcEjG2iU/3pn0yj2UY5aLEdQVEp11ACUbGqSYihGED6OIvwyRvHZIYy6cDmTToMx2iUkME81S0zeRnHJe7b22qPCbqtyQta8wGiqdvL+Wu+1PoudeGGjQR9XTPeIrGaylQRk9fTcpcHi2sTj+QBAAA=</values>
-  </sys_hub_action_instance_v2>
-  <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-    <sys_id>155fd86348884ced8be91873f04a76ab</sys_id>
-    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
-    <action_type>5bc1bcc6531003003bf1d9109ec587d4</action_type>
-    <action_type_parent>5bc1bcc6531003003bf1d9109ec587d4</action_type_parent>
-    <active>true</active>
-    <comment>Log low stock alert</comment>
-    <display_text/>
-    <flow>abb123da8ac1484dad117a8146dedae3</flow>
-    <generation_source/>
-    <order>3</order>
-    <parent_ui_id/>
-    <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-    <ui_id>155fd863-4888-4ced-8be9-1873f04a76ab</ui_id>
-    <updation_source/>
-    <values>H4sIAAAAAAAAA62PsQ7CMAxEf8Xy3JWlggFmZhaEkElNiXCTynZTVSj/jthALAysT6d7d8cHJhoYW5Tcn4ULCzZYSKYXm0kTNthFG4WWwye1oHH0bfBYGNsriXGDIykN7KzYPtCX8ZUPtxwDY63Nh2xgM+r5TbfPM5jncAcSVm9hJzl3EFPh5FkXUA5ZO7iRwZSi25kKRaGLMKw3sPqe+ofGn2+aa0w91np6An60xCdVAQAA</values>
-  </sys_hub_action_instance_v2>
-  <sys_hub_alias_mapping action="delete_multiple" query="source_id=53d1feb394f24d7793ec6a4cfa13d807"/>
-  <sys_hub_alias_mapping action="delete_multiple" query="source_id=155fd86348884ced8be91873f04a76ab"/>
-  <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=abb123da8ac1484dad117a8146dedae3^sys_idNOT INf1cf32b1d28543878047cab2aaf626ae"/>
-  <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
-    <sys_id>f1cf32b1d28543878047cab2aaf626ae</sys_id>
-    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
-    <attributes/>
-    <comment/>
-    <display_text/>
-    <flow>abb123da8ac1484dad117a8146dedae3</flow>
-    <generation_source/>
-    <order>2</order>
-    <parent_ui_id/>
-    <subflow>dcaf26ecbb9d47bbaaf6da38b9c3e89e</subflow>
-    <subflow_inputs>H4sIAAAAAAAAA52QMWvDQAxG/8qh2TF09VYyBbqVdinFyHdKED7rDllOMOb+e3CGZAgNprP0Ph7vZwHBgaABJc+ZSaylATlCBWeM03pZlq8c0Ci0b7WfVEms7mJKoe1Q+noaSesbUwpUEHjMEefvf8EZFQcyUmgWsDmvC6MpywlKqe6ukoyP7NE4SXt7e9h+pIv7tOR79x5Jze3cQc4klnR2e2Vjj/FZcyO10U/JJw2vE26M9WcWpSMpiSco5fcK3EnQaccBAAA=</subflow_inputs>
-    <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
-    <ui_id>f1cf32b1-d285-4387-8047-cab2aaf626ae</ui_id>
-    <wait_for_completion>true</wait_for_completion>
-  </sys_hub_sub_flow_instance_v2>
-  <sys_hub_alias_mapping action="delete_multiple" query="source_id=f1cf32b1d28543878047cab2aaf626ae"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=abb123da8ac1484dad117a8146dedae3"/>
+    <sys_variable_value action="delete_multiple" query="document_key=abb123da8ac1484dad117a8146dedae3"/>
+    <sys_flow_record_trigger action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <condition table="x_1920732_lifeli_0_blood_inventory">units_available&lt;=5<item endquery="false" field="units_available" goto="false" newquery="false" operator="&lt;=" or="false" value="5"/>
+        </condition>
+        <name/>
+        <on_delete>false</on_delete>
+        <on_insert>false</on_insert>
+        <on_update>true</on_update>
+        <published_version/>
+        <run_flow_in>background</run_flow_in>
+        <run_on_extended>false</run_on_extended>
+        <run_when_setting>both</run_when_setting>
+        <run_when_user_list/>
+        <run_when_user_setting>any</run_when_user_setting>
+        <sys_class_name>sys_flow_record_trigger</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 18:12:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7ad3db4483650710e4b6ad20ceaad3aa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 18:12:05</sys_updated_on>
+        <table>x_1920732_lifeli_0_blood_inventory</table>
+        <trigger_definition/>
+    </sys_flow_record_trigger>
+    <sys_trigger_runner_mapping action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <data>{"run_flow_in":"background","run_when_user_list":[],"run_when_setting":"both","run_when_user_setting":"any","run_on_extended":"false"}</data>
+        <identifier>abb123da8ac1484dad117a8146dedae3</identifier>
+        <identifier_type>flow</identifier_type>
+        <runner>FDTriggerRunner</runner>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 18:12:05</sys_created_on>
+        <sys_id>76d3db4483650710e4b6ad20ceaad3ab</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 18:12:05</sys_updated_on>
+        <trigger display_value="">7ad3db4483650710e4b6ad20ceaad3aa</trigger>
+    </sys_trigger_runner_mapping>
+    <sys_trigger_runner_mapping action="delete_multiple" query="identifier=abb123da8ac1484dad117a8146dedae3^sys_idNOT IN76d3db4483650710e4b6ad20ceaad3ab"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=abb123da8ac1484dad117a8146dedae3"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=abb123da8ac1484dad117a8146dedae3"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=abb123da8ac1484dad117a8146dedae3^sys_idNOT IN55d35b4483650710e4b6ad20ceaad3c1,5dd35b4483650710e4b6ad20ceaad39c,95d35b4483650710e4b6ad20ceaad3cd"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,timeFromCreateToActivate=42501000,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Low Stock Monitoring">abb123da8ac1484dad117a8146dedae3</model>
+        <model_id>abb123da8ac1484dad117a8146dedae3</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_abb123da8ac1484dad117a8146dedae3</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 18:11:59</sys_created_on>
+        <sys_id>55d35b4483650710e4b6ad20ceaad3c1</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 18:11:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=55d35b4483650710e4b6ad20ceaad3c1"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Low Stock Monitoring">abb123da8ac1484dad117a8146dedae3</model>
+        <model_id>abb123da8ac1484dad117a8146dedae3</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_abb123da8ac1484dad117a8146dedae3</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 18:11:59</sys_created_on>
+        <sys_id>5dd35b4483650710e4b6ad20ceaad39c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 18:11:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=5dd35b4483650710e4b6ad20ceaad39c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,co_type_name=FDCollection,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Low Stock Monitoring">abb123da8ac1484dad117a8146dedae3</model>
+        <model_id>abb123da8ac1484dad117a8146dedae3</model_id>
+        <model_table>sys_hub_flow</model_table>
+        <name>var__m_sys_hub_flow_input_abb123da8ac1484dad117a8146dedae3</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 18:11:59</sys_created_on>
+        <sys_id>95d35b4483650710e4b6ad20ceaad3cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 18:11:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=95d35b4483650710e4b6ad20ceaad3cd"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=abb123da8ac1484dad117a8146dedae3"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=abb123da8ac1484dad117a8146dedae3"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=abb123da8ac1484dad117a8146dedae3^sys_idNOT INd49f4cdba7aa48fc809f13fdb93b4f78"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Low Stock Monitoring">abb123da8ac1484dad117a8146dedae3</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 06:23:19</sys_created_on>
+        <sys_id>d49f4cdba7aa48fc809f13fdb93b4f78</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 18:12:02</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+1YUU/bMBD+K1GeNqmTCmiaxts2hlSJDQnY9sBQ5NqX1pprd7bTkiH++85J3JokhcAa2DReKDnbue/uvu9s5/wqtppPJqBH0lgiKZzmZsTi/TgexIKMQeC/Z2QsAJ+5tKAlEWf5HNBsnTmRZObGGMxBMpC2XEqnilM44gafzy8G8YxIRqzSebxvdQaDONVqdgazuSAW35USYdCoNAMd7+8Mh4O4eG/lBF+4ICJzz5fJztvd4Zu93UTwFARPhslYKMUSLhfo3XlAMNzgi/Ov91lDp1wwDbLEOyca/VuH5qqRhxo025KOKhKMAy6tSwxbBRmkorJoIOxYijyYcmn4LyjWZwaSILnVjPR0qpYnkAIipnDIZeGuGhSKErF6IhYrPM4sGIzl+nqVnUMOoiq0oZrP7Ttq+cIX43rQhRknmYy+TUFGXwzoqCh3gyYTwRlg5oux7jTxgd7Fk4IYAbSqODqTyRKRJZg/7b17EjUp0o0AreHe5tC2pOBvpUZM2MKV2eXRaTTuiyunYAxX7tdaLidNxpSsuIMtVxgo/MxcjEUyUl/K4mWkxIfmo8q9y2LkMKRKl/UbrSd6TG7BaEYmFSXQgwBqgwqluDJ4+sRxGYawzsMGUFLJpAuwz0q+ekxcY2WnIRiP4z3abyQImbkJnPlDdA/TfV12ZsWmxc3YakqvrPdRe5Owm53bGoX/Z7WnQi2RRNsWOJF5g7LOE5fI0jyiCp1d2t4kg/KAiVaZZJtQ3JzRj24J/XE7iPWM6AWDlGTCvnxqoTps2AZDjYZx1JUajnXU65pyrW6f1blO1bGMPlZBR8XJ1mxbqAXyGj2xjdJMYzpssaX4tEfWI+hJtG68iQV33gCQP9A/qUbwoLDi4lonHn9NIt7cUR2tJd/o+1ksZeY+KMm4LU9hdX34IdPL3aYqDQ0AeEJkkluTkAXhwhXyezYc7tHiL3vd5MkdszvQJ0xCCyzbko/e+FJ9QXgoXZZEYjKsSghjSYB41bBmioE4CKpZcQT3kHlmTXwd1Bo1s/oU0OfduqfLUttZCo//7hzl7rG99WMlIVFp6zWIp1GVHOxS4zyyU0BMAvdwfHOBqr9tQipX0Dq0AxXhQKQfBdx2bkPFR4jmlagsd605lMZ7f/7YfBuqOX/eR9bpOytnbVvG2N/RnNApkZPyFOW5e4hqBkKnUTklKqf0qGta+7hB+3MGC9B5I1hnjLI5c1LpyzMRS5KbRvvC7uAaRXWeRANKQpYieLKW4PcuYzXOnORBN/D5q/UDb+7YEdaU3uzxX2kB3RV/8Ru6fD//OhkAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=abb123da8ac1484dad117a8146dedae3^sys_idNOT IN155fd86348884ced8be91873f04a76ab,53d1feb394f24d7793ec6a4cfa13d807"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="">5bc1bcc6531003003bf1d9109ec587d4</action_type_parent>
+        <attributes>timeFromCreateToActivate=42501000</attributes>
+        <comment>Log low stock alert</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Low Stock Monitoring">abb123da8ac1484dad117a8146dedae3</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 06:23:19</sys_created_on>
+        <sys_id>155fd86348884ced8be91873f04a76ab</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 18:12:02</sys_updated_on>
+        <ui_id>155fd863-4888-4ced-8be9-1873f04a76ab</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VU32/aMBD+VyI/AyLQrCtvG6zSJNpKQ2IPXRUdzgWsOXZmO1CG+r/vnBhIV7QNibdJCOm+fL6773497piCAtmISb1MJa5Rsg5bg6w8tgGjyMyELSVs5wH9SqhQS/pQgqHHDg0b7RhfCZkZVGz0+NRhIiNmsuDxgvN3yTDu94f0W+RxdhP3b5An76+za3IhYUEhR2waQp/Ixm1LD/GVFhyDPQ3PxntQm8yn0e8wfHaoMqT4OUiLHVaAysBpsz0gBiF7UPIIrIRy5I158rMVPyneVd/zciRFHJtvBzMNFWngfAIOZs5U3FUmUJtkLdVid5DY7Ub3WmHU7bZK3Er9pXPkfla5brFEYwZm3GYeu/Fb1wJ50CZ/MkabFhWDHbjDF+pchjlU0o3PVxD/s4LBOQqGZyi48gqa4j+UTmiaRhb7mYGF3LdGy6pQ982csYPe+etEAzp5PfpBVGVpBLD0Y+bnJgxRPlvpzZf9jNwKVWcUPkrNQR4scM6IReV8fXcMJRbkKC2gLKkQaWn0WtSPKdmit5Rk9HKpNxTUiqXqAffSejTV0LslfFLDczDCy7wjN/T4pcPs1o4lWHsUSyOc/qh8Jo30oCGtC1U/4UaU7gMFWGNI15e/tZYFWgtLbPVgqjeRdZp/j0CicaPoo9Q6i4Rak2vau8ggp/5EK7BRpYSzKaxBSJ9r9K2is8Dr/yxK3h6bi/r+270aDP90rzBp3au7QxVOlibcLEttrie7fbNme3C/Nhe7WYMkuczROnUG3i7WWXv1/63N0y/i/ImQXQcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=155fd86348884ced8be91873f04a76ab"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Fire Event">80a30edeff30311077a95dac793bf19b</action_type>
+        <action_type_parent display_value="">80a30edeff30311077a95dac793bf19b</action_type_parent>
+        <attributes>timeFromCreateToActivate=42501000</attributes>
+        <comment>Fire low stock event</comment>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Low Stock Monitoring">abb123da8ac1484dad117a8146dedae3</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 06:23:19</sys_created_on>
+        <sys_id>53d1feb394f24d7793ec6a4cfa13d807</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 18:12:02</sys_updated_on>
+        <ui_id>53d1feb3-94f2-4d77-93ec-6a4cfa13d807</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2XUY/TOBDHv0qU56ZKHLdJ9g2x7AnpDk5b4AWhyLHHW4ObBMcp26v2u58dJ23aK4VdlpUQ91LJ47E985/5xe77rV+SFfgXviaFBH/ir4ls7fg2jzIUJjHKpeAgRR7mhawqlotyDaWu1MY4M9HUkmze3WdNTZQ5UYPyL7Y+XQrJFJT+xfsPE18wswmlJA6BAedxGEdRmCQkmzFCkywueEQSs4UkBUjj+qaP+SgFval3w7ybc7Y/x8u8V26iUsyGEk98uNVQMjAxcCIbmPgrUjLSRT1YFBD2upTGoFXbedw24h9zWBraSQ4mFWrP9kfDvFfJmfkl0WRhllPdqt6VLitBoXEimMxJK/Xzsc05vK61qEq3xOXqVleyXZWvnAb+boOhKMbSNiYIqG12pd4lwxfL6sv1EOWVKDsh+klZUSJ3I6K1EkWrbTxbvxVvTijsrCc1Bgkrc3K+InUtypu8VtVadKeZ4FfTG2kGUy6rLybKRtyUU0JtplOjPpleGftlZ35HlLDb/mW2MYvtkW9L8bmFl7ZvMoQxn6dpUCDCApzOcVAUYRokEQ6R6ScUz2L/buI3m+a5JE2zF8xUKv/c2nSdfL1QudPaLqFK1PqZCWoNvSZ3kx05CqhpohE62+3b2oQOLI+mtFVGXn13919avoeF8CwLeMTC9RDFcVQ9DayibVcEwY5wuOxnvJeXex7QeR5c++9x6D2WwvaXb8ulgHl/2MK6wLyq+AhUe1xVK08vwQP7RfAGZHcgxegXAsmp8OMcHdbmEKTD6jwJSTyiZBahOEBxQgOc0TRIMZifosAIZylFdP4AkpzS38Spa4zho/L122hq7pSpTbTRFf30ILrSszdNBiO6Xtig9nAdxNgDtu/aQ7yuR/Yerugx4FpsGg0r74XjaEm01yyrVjKvAI9bj3NYmdK5HBTciEZ3PXCKM7f7deekSEfNo5N3KpYnuNP4AoiiyysBkh2X9Cucjkt8SOm4yE/CKEAYA0t4kBCMA4xnhbntcBzQcJZlJESIR+in3HYGqlX0INxYevYyK0a4/T1s5UV76IaTe95MQxp1j2BbDMaeNHzPZ90has/Kjdd9gRxfCppKrqHxdOURb3f+6BEY/pbPwJ0Sh0zsavEkQMxnYRaGiAdsnkKAI44CEmVpgFBcRGxOMZpnPw0I9DAg8Fkg+Ekg0CEQ6J5AzP4H4jcBguM5jmmSBNj0mHnFpeb/UAKzIJ4xnmCW0HkaPSIQH/4FxJyfo0sQAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=53d1feb394f24d7793ec6a4cfa13d807"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=abb123da8ac1484dad117a8146dedae3^sys_idNOT INf1cf32b1d28543878047cab2aaf626ae"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes>timeFromCreateToActivate=42501000</attributes>
+        <comment/>
+        <display_text/>
+        <flow display_value="Low Stock Monitoring">abb123da8ac1484dad117a8146dedae3</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <show_stages>false</show_stages>
+        <subflow display_value="Send Notification">56c3574483650710e4b6ad20ceaad31c</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/+1VTW/bMAz9K4bOmeHEdr5uRboAA7oWSLJdisKgLaoRKlueLKfNgvz3UbGTJl3bdTsUGNBbRJH0e4+P0fWGFZAjGzODmSwlFjbBHKRiHbYCVbubzeZbycEiT7p+VhtDOX6qtOZJCsWdX1do/F3NdktVXFalgvX3fyouwRAai4aNNyxbSsWpgI2vbzpMcurW46FA3u8NQxxF0A9gOBhGQV/EQcgxFn1qoSBFRamzPR/vc8vnRaJ2XbqLyhpZ3Lbni7bNfB/UhjtY3Q7DB4sFR8IjQFXYYTkURFGbNRtbU1PAIPCrQq0PGUtZWGrGXO5DJX/S56LA5Qkkghk2d4dj0orYhMU5WCAcdWZr06ZmSy0zrBppOAqolZ0cx5qEq9JKXTQlFlK1r9aqzovLRg92aLCfGUVoLgnH0vF0yFsaYr7U97M9yqksdpK0l0pnoA4nsCRcWluHZ8NQYe4Uz6EsSc6kNHold8WEJfdvFR18ofQ9fbSSt4UPmQPuk6zgTyl+vgt/ByMdi6/UhooJplw8nZ3McWp0PqEZWFzoM2q0ol+UE/XioBsEAdt2WLWuJgqq6lEDEj/5UTsGjSIt96SRz5VkRpZ21w9bmtvOYX0KbaWQGTjYyc5Qjwt0oe+9udXZnXem0Fjvk/elWFFvcow3MdJKJ9xvm/PGqj+tjIj4IMZgMBzhMBqJAaQghgMMuxCkgxS7RytzecTBWzQcXqH3N2vT+1ibj7V5Zm3oz5gc8vpj89yz8gbjxz2I+ajfjcNBHKVckO0DMRpFcTYKe0GYnrwVyn3Sm+3RPEXXWv3ReKdunx3FW8OHrxu+jbzF8WHv1PEWqrsXXL9orv5L54s5gsmWU4nKTa+o83Tn1XfeiJMRv+tS3PwCvclCG4wJAAA=</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 06:23:19</sys_created_on>
+        <sys_id>f1cf32b1d28543878047cab2aaf626ae</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 18:12:02</sys_updated_on>
+        <ui_id>f1cf32b1-d285-4387-8047-cab2aaf626ae</ui_id>
+        <updation_source/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=abb123da8ac1484dad117a8146dedae3"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=abb123da8ac1484dad117a8146dedae3"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=abb123da8ac1484dad117a8146dedae3"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_abb123da8ac1484dad117a8146dedae3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 18:12:00</sys_created_on>
+        <sys_id>69d35b4483650710e4b6ad20ceaad3d5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LifeLink" source="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 18:12:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_abb123da8ac1484dad117a8146dedae3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 18:11:59</sys_created_on>
+        <sys_id>99d35b4483650710e4b6ad20ceaad3bc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LifeLink" source="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 18:11:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_abb123da8ac1484dad117a8146dedae3</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 18:11:59</sys_created_on>
+        <sys_id>d9d35b4483650710e4b6ad20ceaad3c8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LifeLink" source="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 18:11:59</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_abb123da8ac1484dad117a8146dedae3"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_abb123da8ac1484dad117a8146dedae3"/>
+    <sys_hub_flow_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <active>true</active>
+        <allow_high_security_roles>false</allow_high_security_roles>
+        <annotation/>
+        <attributes>timeFromCreateToActivate=42501000</attributes>
+        <authored_on_release_version>-1</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description>Notify blood banks when inventory reaches critical level (≤ 5 units).</description>
+        <flow_priority>MEDIUM</flow_priority>
+        <internal_name>low_stock_monitoring</internal_name>
+        <label_cache>[{"name":"Updated_1.current","label":"Trigger - Record Updated➛x_1920732_lifeli_0_blood_inventory Record","type":"reference","base_type":"reference","usedInstances":{"53d1feb3-94f2-4d77-93ec-6a4cfa13d807":["record"],"f1cf32b1-d285-4387-8047-cab2aaf626ae":["record"]},"attributes":{}},{"name":"Updated_1.current.blood_bank.user.email","label":"Trigger - Record Updated➛x_1920732_lifeli_0_blood_inventory Record➛Blood Bank➛User➛Email","type":"string","base_type":"string","usedInstances":{"f1cf32b1-d285-4387-8047-cab2aaf626ae":["recipient_email"]},"attributes":{}}]</label_cache>
+        <master>true</master>
+        <name>Low Stock Monitoring</name>
+        <natlang/>
+        <outputs/>
+        <parent_flow display_value="Low Stock Monitoring">abb123da8ac1484dad117a8146dedae3</parent_flow>
+        <remote_trigger_id/>
+        <run_as>system</run_as>
+        <run_with_roles/>
+        <sc_callable>false</sc_callable>
+        <status>published</status>
+        <sys_class_name>sys_hub_flow_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 18:12:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>92d3db4483650710e4b6ad20ceaad302</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 18:12:03</sys_updated_on>
+        <type>flow</type>
+        <version>2</version>
+    </sys_hub_flow_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=92d3db4483650710e4b6ad20ceaad302"/>
+    <sys_variable_value action="delete_multiple" query="document_key=92d3db4483650710e4b6ad20ceaad302"/>
+    <sys_hub_flow_stage action="delete_multiple" query="flow=92d3db4483650710e4b6ad20ceaad302"/>
+    <sys_flow_cat_variable_model action="delete_multiple" query="id=92d3db4483650710e4b6ad20ceaad302^sys_idNOT IN16d3db4483650710e4b6ad20ceaad303"/>
+    <sys_flow_cat_variable_model action="INSERT_OR_UPDATE">
+        <id>92d3db4483650710e4b6ad20ceaad302</id>
+        <name>Low Stock Monitoring</name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 18:12:03</sys_created_on>
+        <sys_id>16d3db4483650710e4b6ad20ceaad303</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 18:12:03</sys_updated_on>
+    </sys_flow_cat_variable_model>
+    <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=16d3db4483650710e4b6ad20ceaad303"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=92d3db4483650710e4b6ad20ceaad302^sys_idNOT IN1ad3db4483650710e4b6ad20ceaad32e,52d3db4483650710e4b6ad20ceaad311,9ed3db4483650710e4b6ad20ceaad36c"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>child_label=FDChangeDetails,child_name=FDChangeDetails,child_type=object,child_type_label=Object,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,pwd2droppable=true,uiType=array.object,uiTypeLabel=Array.Object</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>changed_fields</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Changed Fields</label>
+        <mandatory>false</mandatory>
+        <max_length>4000</max_length>
+        <model display_value="Low Stock Monitoring">92d3db4483650710e4b6ad20ceaad302</model>
+        <model_id>92d3db4483650710e4b6ad20ceaad302</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_92d3db4483650710e4b6ad20ceaad302</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 18:12:04</sys_created_on>
+        <sys_id>1ad3db4483650710e4b6ad20ceaad32e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 18:12:04</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=1ad3db4483650710e4b6ad20ceaad32e"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,timeFromCreateToActivate=42501000,uiType=document_id</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent>table_name</dependent>
+        <dependent_on_field>table_name</dependent_on_field>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>current</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">document_id</internal_type>
+        <label>Record</label>
+        <mandatory>true</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Low Stock Monitoring">92d3db4483650710e4b6ad20ceaad302</model>
+        <model_id>92d3db4483650710e4b6ad20ceaad302</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_92d3db4483650710e4b6ad20ceaad302</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 18:12:03</sys_created_on>
+        <sys_id>52d3db4483650710e4b6ad20ceaad311</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 18:12:03</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>true</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=52d3db4483650710e4b6ad20ceaad311"/>
+    <sys_hub_flow_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,test_input_hidden=true,uiType=table_name</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>table_name</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="">table_name</internal_type>
+        <label>Table Name</label>
+        <mandatory>false</mandatory>
+        <max_length>200</max_length>
+        <model display_value="Low Stock Monitoring">92d3db4483650710e4b6ad20ceaad302</model>
+        <model_id>92d3db4483650710e4b6ad20ceaad302</model_id>
+        <model_table>sys_hub_flow_snapshot</model_table>
+        <name>var__m_sys_hub_flow_input_92d3db4483650710e4b6ad20ceaad302</name>
+        <next_element/>
+        <order>101</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_only_option/>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_flow_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 18:12:04</sys_created_on>
+        <sys_id>9ed3db4483650710e4b6ad20ceaad36c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 18:12:04</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_flow_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=9ed3db4483650710e4b6ad20ceaad36c"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=92d3db4483650710e4b6ad20ceaad302"/>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=92d3db4483650710e4b6ad20ceaad302"/>
+    <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=92d3db4483650710e4b6ad20ceaad302^sys_idNOT IN22d3db4483650710e4b6ad20ceaad391"/>
+    <sys_hub_trigger_instance_v2 action="INSERT_OR_UPDATE">
+        <comment/>
+        <display_text/>
+        <flow display_value="Low Stock Monitoring">92d3db4483650710e4b6ad20ceaad302</flow>
+        <generation_source/>
+        <name>Updated</name>
+        <published_version/>
+        <remote_sys_id/>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 18:12:04</sys_created_on>
+        <sys_id>22d3db4483650710e4b6ad20ceaad391</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 18:12:04</sys_updated_on>
+        <trigger_definition display_value="Updated">bb695e60c31322002841b63b12d3aea5</trigger_definition>
+        <trigger_inputs>H4sIAAAAAAAA/+1YUU/bMBD+K1GeNqmTCmiaxts2hlSJDQnY9sBQ5NqX1pprd7bTkiH++85J3JokhcAa2DReKDnbue/uvu9s5/wqtppPJqBH0lgiKZzmZsTi/TgexIKMQeC/Z2QsAJ+5tKAlEWf5HNBsnTmRZObGGMxBMpC2XEqnilM44gafzy8G8YxIRqzSebxvdQaDONVqdgazuSAW35USYdCoNAMd7+8Mh4O4eG/lBF+4ICJzz5fJztvd4Zu93UTwFARPhslYKMUSLhfo3XlAMNzgi/Ov91lDp1wwDbLEOyca/VuH5qqRhxo025KOKhKMAy6tSwxbBRmkorJoIOxYijyYcmn4LyjWZwaSILnVjPR0qpYnkAIipnDIZeGuGhSKErF6IhYrPM4sGIzl+nqVnUMOoiq0oZrP7Ttq+cIX43rQhRknmYy+TUFGXwzoqCh3gyYTwRlg5oux7jTxgd7Fk4IYAbSqODqTyRKRJZg/7b17EjUp0o0AreHe5tC2pOBvpUZM2MKV2eXRaTTuiyunYAxX7tdaLidNxpSsuIMtVxgo/MxcjEUyUl/K4mWkxIfmo8q9y2LkMKRKl/UbrSd6TG7BaEYmFSXQgwBqgwqluDJ4+sRxGYawzsMGUFLJpAuwz0q+ekxcY2WnIRiP4z3abyQImbkJnPlDdA/TfV12ZsWmxc3YakqvrPdRe5Owm53bGoX/Z7WnQi2RRNsWOJF5g7LOE5fI0jyiCp1d2t4kg/KAiVaZZJtQ3JzRj24J/XE7iPWM6AWDlGTCvnxqoTps2AZDjYZx1JUajnXU65pyrW6f1blO1bGMPlZBR8XJ1mxbqAXyGj2xjdJMYzpssaX4tEfWI+hJtG68iQV33gCQP9A/qUbwoLDi4lonHn9NIt7cUR2tJd/o+1ksZeY+KMm4LU9hdX34IdPL3aYqDQ0AeEJkkluTkAXhwhXyezYc7tHiL3vd5MkdszvQJ0xCCyzbko/e+FJ9QXgoXZZEYjKsSghjSYB41bBmioE4CKpZcQT3kHlmTXwd1Bo1s/oU0OfduqfLUttZCo//7hzl7rG99WMlIVFp6zWIp1GVHOxS4zyyU0BMAvdwfHOBqr9tQipX0Dq0AxXhQKQfBdx2bkPFR4jmlagsd605lMZ7f/7YfBuqOX/eR9bpOytnbVvG2N/RnNApkZPyFOW5e4hqBkKnUTklKqf0qGta+7hB+3MGC9B5I1hnjLI5c1LpyzMRS5KbRvvC7uAaRXWeRANKQpYieLKW4PcuYzXOnORBN/D5q/UDb+7YEdaU3uzxX2kB3RV/8Ru6fD//OhkAAA==</trigger_inputs>
+        <trigger_outputs/>
+        <trigger_type>record_update</trigger_type>
+        <updation_source/>
+    </sys_hub_trigger_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=92d3db4483650710e4b6ad20ceaad302^sys_idNOT IN2ad3db4483650710e4b6ad20ceaad38d,2ed3db4483650710e4b6ad20ceaad38e"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Fire Event">80a30edeff30311077a95dac793bf19b</action_type>
+        <action_type_parent display_value="Fire Event">15e10e5eff30311077a95dac793bf11e</action_type_parent>
+        <attributes>timeFromCreateToActivate=42501000</attributes>
+        <comment>Fire low stock event</comment>
+        <compiled_snapshot>80a30edeff30311077a95dac793bf19b</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Low Stock Monitoring">92d3db4483650710e4b6ad20ceaad302</flow>
+        <generation_source/>
+        <order>1</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 18:12:04</sys_created_on>
+        <sys_id>2ad3db4483650710e4b6ad20ceaad38d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 18:12:04</sys_updated_on>
+        <ui_id>53d1feb3-94f2-4d77-93ec-6a4cfa13d807</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+2XUY/TOBDHv0qU56ZKHLdJ9g2x7AnpDk5b4AWhyLHHW4ObBMcp26v2u58dJ23aK4VdlpUQ91LJ47E985/5xe77rV+SFfgXviaFBH/ir4ls7fg2jzIUJjHKpeAgRR7mhawqlotyDaWu1MY4M9HUkmze3WdNTZQ5UYPyL7Y+XQrJFJT+xfsPE18wswmlJA6BAedxGEdRmCQkmzFCkywueEQSs4UkBUjj+qaP+SgFval3w7ybc7Y/x8u8V26iUsyGEk98uNVQMjAxcCIbmPgrUjLSRT1YFBD2upTGoFXbedw24h9zWBraSQ4mFWrP9kfDvFfJmfkl0WRhllPdqt6VLitBoXEimMxJK/Xzsc05vK61qEq3xOXqVleyXZWvnAb+boOhKMbSNiYIqG12pd4lwxfL6sv1EOWVKDsh+klZUSJ3I6K1EkWrbTxbvxVvTijsrCc1Bgkrc3K+InUtypu8VtVadKeZ4FfTG2kGUy6rLybKRtyUU0JtplOjPpleGftlZ35HlLDb/mW2MYvtkW9L8bmFl7ZvMoQxn6dpUCDCApzOcVAUYRokEQ6R6ScUz2L/buI3m+a5JE2zF8xUKv/c2nSdfL1QudPaLqFK1PqZCWoNvSZ3kx05CqhpohE62+3b2oQOLI+mtFVGXn13919avoeF8CwLeMTC9RDFcVQ9DayibVcEwY5wuOxnvJeXex7QeR5c++9x6D2WwvaXb8ulgHl/2MK6wLyq+AhUe1xVK08vwQP7RfAGZHcgxegXAsmp8OMcHdbmEKTD6jwJSTyiZBahOEBxQgOc0TRIMZifosAIZylFdP4AkpzS38Spa4zho/L122hq7pSpTbTRFf30ILrSszdNBiO6Xtig9nAdxNgDtu/aQ7yuR/Yerugx4FpsGg0r74XjaEm01yyrVjKvAI9bj3NYmdK5HBTciEZ3PXCKM7f7deekSEfNo5N3KpYnuNP4AoiiyysBkh2X9Cucjkt8SOm4yE/CKEAYA0t4kBCMA4xnhbntcBzQcJZlJESIR+in3HYGqlX0INxYevYyK0a4/T1s5UV76IaTe95MQxp1j2BbDMaeNHzPZ90has/Kjdd9gRxfCppKrqHxdOURb3f+6BEY/pbPwJ0Sh0zsavEkQMxnYRaGiAdsnkKAI44CEmVpgFBcRGxOMZpnPw0I9DAg8Fkg+Ekg0CEQ6J5AzP4H4jcBguM5jmmSBNj0mHnFpeb/UAKzIJ4xnmCW0HkaPSIQH/4FxJyfo0sQAAA=</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2ad3db4483650710e4b6ad20ceaad38d"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Log">5bc1bcc6531003003bf1d9109ec587d4</action_type>
+        <action_type_parent display_value="Log">0e0ae8c2531003003bf1d9109ec587c8</action_type_parent>
+        <attributes>timeFromCreateToActivate=42501000</attributes>
+        <comment>Log low stock alert</comment>
+        <compiled_snapshot>5bc1bcc6531003003bf1d9109ec587d4</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Low Stock Monitoring">92d3db4483650710e4b6ad20ceaad302</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 18:12:04</sys_created_on>
+        <sys_id>2ed3db4483650710e4b6ad20ceaad38e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 18:12:04</sys_updated_on>
+        <ui_id>155fd863-4888-4ced-8be9-1873f04a76ab</ui_id>
+        <updation_source/>
+        <values>H4sIAAAAAAAA/+VU32/aMBD+VyI/AyLQrCtvG6zSJNpKQ2IPXRUdzgWsOXZmO1CG+r/vnBhIV7QNibdJCOm+fL6773497piCAtmISb1MJa5Rsg5bg6w8tgGjyMyELSVs5wH9SqhQS/pQgqHHDg0b7RhfCZkZVGz0+NRhIiNmsuDxgvN3yTDu94f0W+RxdhP3b5An76+za3IhYUEhR2waQp/Ixm1LD/GVFhyDPQ3PxntQm8yn0e8wfHaoMqT4OUiLHVaAysBpsz0gBiF7UPIIrIRy5I158rMVPyneVd/zciRFHJtvBzMNFWngfAIOZs5U3FUmUJtkLdVid5DY7Ub3WmHU7bZK3Er9pXPkfla5brFEYwZm3GYeu/Fb1wJ50CZ/MkabFhWDHbjDF+pchjlU0o3PVxD/s4LBOQqGZyi48gqa4j+UTmiaRhb7mYGF3LdGy6pQ982csYPe+etEAzp5PfpBVGVpBLD0Y+bnJgxRPlvpzZf9jNwKVWcUPkrNQR4scM6IReV8fXcMJRbkKC2gLKkQaWn0WtSPKdmit5Rk9HKpNxTUiqXqAffSejTV0LslfFLDczDCy7wjN/T4pcPs1o4lWHsUSyOc/qh8Jo30oCGtC1U/4UaU7gMFWGNI15e/tZYFWgtLbPVgqjeRdZp/j0CicaPoo9Q6i4Rak2vau8ggp/5EK7BRpYSzKaxBSJ9r9K2is8Dr/yxK3h6bi/r+270aDP90rzBp3au7QxVOlibcLEttrie7fbNme3C/Nhe7WYMkuczROnUG3i7WWXv1/63N0y/i/ImQXQcAAA==</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_alias_mapping action="delete_multiple" query="source_id=2ed3db4483650710e4b6ad20ceaad38e"/>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=92d3db4483650710e4b6ad20ceaad302^sys_idNOT INa2d3db4483650710e4b6ad20ceaad392"/>
+    <sys_hub_sub_flow_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes>timeFromCreateToActivate=42501000</attributes>
+        <comment/>
+        <display_text/>
+        <flow display_value="Low Stock Monitoring">92d3db4483650710e4b6ad20ceaad302</flow>
+        <generation_source/>
+        <order>2</order>
+        <parent_ui_id/>
+        <show_stages>false</show_stages>
+        <subflow display_value="Send Notification">56c3574483650710e4b6ad20ceaad31c</subflow>
+        <subflow_inputs>H4sIAAAAAAAA/+1VTW/bMAz9K4bOmeF8dsitSBdgQNcCSdZLURi0RCdCZcmT5aRZkP8+yna+ujbrdigwoLeIIun3Hh+j+w3TkCEbMotc5hK1izEDqViLLUGV/maz+Z4LcCjidshLayknTJQxIk5AP4ZlgTasarZbqhKyyBWs7/6pOAdLaBxaNtwwvpBKUAEb3j+0mBTUrY+827/o9T53B/3ooh1hLxmA6EQcAUS3jdRCQYKKUic7PsGXhs+rRN069xeFs1LPm/N102a6CxorPKx2i+GTQy2Q8KSgCmyxDDRRNHbNhs6WFLAI4lar9T5jIbWjZsznPhXyJ32uF/m8FIkgx/puf4wbEetwegUOCEfJXWmbVL4wkmNRSyMwhVK50XGsTrjNnTS6LnGQqF21UWWmb2o92L7BbmYUobnEAnPP0yNvaKTThVlNdijHUleSNJfKcFD7EzgSLimdx7NhqDDzimeQ5yRnnFuzlFUxYcnCuaJDmCqzoo8Wcq5D4B54SLJCOKb4VRW+Ays9i2/UhooJppw9n53McGxNNqIZOJyZS2q0pF+U0+v0o3YURWzbYsW6GCkoioMGJH78o/QMakUa7nEtny/hVuau6ocNzW1rvz7aOJlKDh52XBnqsEDXZhVMneGPwaVC64JPwVe9pN7kmGBkpZNeuN82541Vf1qZzuDcyvQGRytzc8QhmNUcztD7m7XpfKzNx9q8sDb0Z0wOOf/YvPSsvMH42Dln/EFy8lYo/8lgskPzHF1j9YPxTt0+OYo3hu+eN3wTeYvju51TxzsoHl9x/ay++i+dn04RLF+MJSo/PV1mSeXVd96IkxG/61I8/AKU0wRZjAkAAA==</subflow_inputs>
+        <sys_class_name>sys_hub_sub_flow_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 18:12:04</sys_created_on>
+        <sys_id>a2d3db4483650710e4b6ad20ceaad392</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 18:12:04</sys_updated_on>
+        <ui_id>f1cf32b1-d285-4387-8047-cab2aaf626ae</ui_id>
+        <updation_source/>
+        <wait_for_completion>true</wait_for_completion>
+    </sys_hub_sub_flow_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=92d3db4483650710e4b6ad20ceaad302"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=92d3db4483650710e4b6ad20ceaad302"/>
+    <sys_hub_flow_variable action="delete_multiple" query="model=92d3db4483650710e4b6ad20ceaad302"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>table_name</element>
+        <help/>
+        <hint/>
+        <label>Table Name</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_92d3db4483650710e4b6ad20ceaad302</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 18:12:04</sys_created_on>
+        <sys_id>26d3db4483650710e4b6ad20ceaad374</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LifeLink" source="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 18:12:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>current</element>
+        <help/>
+        <hint/>
+        <label>Record</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_92d3db4483650710e4b6ad20ceaad302</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 18:12:04</sys_created_on>
+        <sys_id>5ed3db4483650710e4b6ad20ceaad329</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LifeLink" source="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 18:12:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>changed_fields</element>
+        <help/>
+        <hint/>
+        <label>Changed Fields</label>
+        <language>en</language>
+        <name>var__m_sys_hub_flow_input_92d3db4483650710e4b6ad20ceaad302</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 18:12:04</sys_created_on>
+        <sys_id>d2d3db4483650710e4b6ad20ceaad368</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="LifeLink" source="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 18:12:04</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_input_92d3db4483650710e4b6ad20ceaad302"/>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_flow_output_92d3db4483650710e4b6ad20ceaad302"/>
+    <sys_hub_flow action="UPDATE">
+        <sys_id>abb123da8ac1484dad117a8146dedae3</sys_id>
+        <latest_snapshot>92d3db4483650710e4b6ad20ceaad302</latest_snapshot>
+        <compiler_build/>
+        <version_record/>
+    </sys_hub_flow>
+    <sys_flow_trigger_plan action="delete_multiple" query="plan_id=abb123da8ac1484dad117a8146dedae3^sys_idNOT IN3ed3db4483650710e4b6ad20ceaad3ac"/>
+    <sys_flow_trigger_plan action="INSERT_OR_UPDATE">
+        <binding_strategy>com.snc.process_flow.engine.binding.Every</binding_strategy>
+        <plan/>
+        <plan_id>abb123da8ac1484dad117a8146dedae3</plan_id>
+        <snapshot>92d3db4483650710e4b6ad20ceaad302</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 18:12:05</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>3ed3db4483650710e4b6ad20ceaad3ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 18:12:05</sys_updated_on>
+        <trigger display_value="">7ad3db4483650710e4b6ad20ceaad3aa</trigger>
+    </sys_flow_trigger_plan>
+    <sys_flow_subflow_plan action="delete_multiple" query="plan_id=abb123da8ac1484dad117a8146dedae3"/>
 </record_update>

@@ -1,9 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?><record_update table="par_dashboard_visibility">
-  <par_dashboard_visibility action="INSERT_OR_UPDATE">
-    <sys_id>52e3a0a542c548fcb737fd8c5c496c50</sys_id>
-    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
-    <sys_update_name>par_dashboard_visibility_52e3a0a542c548fcb737fd8c5c496c50</sys_update_name>
-    <dashboard>27c9fbbfb4c346dca5a9babcdb1cee67</dashboard>
-    <experience>08c73d60537101100834ddeeff7b1287</experience>
-  </par_dashboard_visibility>
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="par_dashboard_visibility">
+    <par_dashboard_visibility action="INSERT_OR_UPDATE">
+        <dashboard display_value="LifeLink - Hospital Dashboard">27c9fbbfb4c346dca5a9babcdb1cee67</dashboard>
+        <experience display_value="Platform Analytics">08c73d60537101100834ddeeff7b1287</experience>
+        <sys_class_name>par_dashboard_visibility</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 06:37:46</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>52e3a0a542c548fcb737fd8c5c496c50</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package display_value="LifeLink" source="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_update_name>par_dashboard_visibility_52e3a0a542c548fcb737fd8c5c496c50</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 06:37:46</sys_updated_on>
+    </par_dashboard_visibility>
 </record_update>

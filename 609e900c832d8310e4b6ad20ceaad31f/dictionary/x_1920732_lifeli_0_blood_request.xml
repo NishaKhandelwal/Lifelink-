@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="7e5f56a11fbd4178867ec36385937bf5" extends="task" label="Blood Request" name="x_1920732_lifeli_0_blood_request" type="collection">
+        <element label="Hospital" mandatory="true" max_length="32" name="hospital" reference="x_1920732_lifeli_0_organization" reference_qual="organization_type=hospital" type="reference" use_reference_qualifier="advanced"/>
+        <element label="Assigned Blood Bank" max_length="32" name="assigned_blood_bank" reference="x_1920732_lifeli_0_organization" reference_qual="organization_type=blood_bank" type="reference" use_reference_qualifier="advanced"/>
+        <element choice="3" label="Blood Group" mandatory="true" max_length="40" name="blood_group" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="B-" sequence="3" value="b_negative"/>
+                <element inactive_on_update="false" label="B+" sequence="2" value="b_positive"/>
+                <element inactive_on_update="false" label="AB-" sequence="5" value="ab_negative"/>
+                <element inactive_on_update="false" label="O-" sequence="7" value="o_negative"/>
+                <element inactive_on_update="false" label="A-" sequence="1" value="a_negative"/>
+                <element inactive_on_update="false" label="AB+" sequence="4" value="ab_positive"/>
+                <element inactive_on_update="false" label="A+" sequence="0" value="a_positive"/>
+                <element inactive_on_update="false" label="O+" sequence="6" value="o_positive"/>
+            </choice>
+        </element>
+        <element label="Patient Name" mandatory="true" max_length="100" name="patient_name" type="string"/>
+        <element label="Units Required" mandatory="true" max_length="40" name="units_required" type="integer"/>
+        <element choice="3" default="low" label="Emergency Level" mandatory="true" max_length="40" name="emergency_level" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="High" sequence="2" value="high"/>
+                <element inactive_on_update="false" label="Low" sequence="0" value="low"/>
+                <element inactive_on_update="false" label="Critical" sequence="3" value="critical"/>
+                <element inactive_on_update="false" label="Medium" sequence="1" value="medium"/>
+            </choice>
+        </element>
+        <element label="Fulfilled Date" max_length="40" name="fulfilled_date" type="glide_date_time"/>
+        <element label="Needed Before" max_length="40" name="needed_before" type="glide_date_time"/>
+        <element label="Assigned Donor" max_length="32" name="assigned_donor" reference="x_1920732_lifeli_0_donor_profile" type="reference"/>
+    </element>
+</database>

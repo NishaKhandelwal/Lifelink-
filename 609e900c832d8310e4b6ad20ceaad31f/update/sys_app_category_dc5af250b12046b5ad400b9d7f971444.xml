@@ -1,9 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update table="sys_app_category">
-  <sys_app_category action="INSERT_OR_UPDATE">
-    <sys_id>dc5af250b12046b5ad400b9d7f971444</sys_id>
-    <sys_scope display_value="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
-    <sys_update_name>sys_app_category_dc5af250b12046b5ad400b9d7f971444</sys_update_name>
-    <name>lifelink</name>
-    <style>border-color: #c62828; background-color: #ffebee;</style>
-  </sys_app_category>
+    <sys_app_category action="INSERT_OR_UPDATE">
+        <default_order/>
+        <name>lifelink</name>
+        <style>border-color: #c62828; background-color: #ffebee;</style>
+        <sys_class_name>sys_app_category</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-06-13 06:37:49</sys_created_on>
+        <sys_id>dc5af250b12046b5ad400b9d7f971444</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>lifelink</sys_name>
+        <sys_package display_value="LifeLink" source="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+        <sys_update_name>sys_app_category_dc5af250b12046b5ad400b9d7f971444</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-06-13 06:37:49</sys_updated_on>
+    </sys_app_category>
 </record_update>
