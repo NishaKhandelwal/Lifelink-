@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_form_sections form_id="e747361983298f10e4b6ad20ceaad3f0" sys_domain="global" table="x_1920732_lifeli_0_organization" version="3">
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-17 13:16:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>4a86729583298f10e4b6ad20ceaad39a</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1920732_lifeli_0_organization" name="x_1920732_lifeli_0_organization" sys_domain="global" view="Default view">e747361983298f10e4b6ad20ceaad3f0</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_1920732_lifeli_0_organization" sys_domain="global" view="Default view">0005d70883650710e4b6ad20ceaad349</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-17 13:16:22</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-17 13:16:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8e86729583298f10e4b6ad20ceaad39b</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1920732_lifeli_0_organization" name="x_1920732_lifeli_0_organization" sys_domain="global" view="Default view">e747361983298f10e4b6ad20ceaad3f0</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_1920732_lifeli_0_organization" sys_domain="global" view="Default view">0005d70883650710e4b6ad20ceaad349</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-17 13:16:22</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-17 13:16:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>8a86729583298f10e4b6ad20ceaad3a2</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1920732_lifeli_0_organization" name="x_1920732_lifeli_0_organization" sys_domain="global" view="Default view">e747361983298f10e4b6ad20ceaad3f0</sys_ui_form>
+            <sys_ui_section caption="NULL" display_value="" name="x_1920732_lifeli_0_organization" sys_domain="global" view="Default view">0005d70883650710e4b6ad20ceaad349</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-17 13:16:22</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-17 13:21:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>05a7765983298f10e4b6ad20ceaad368</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1920732_lifeli_0_organization" name="x_1920732_lifeli_0_organization" sys_domain="global" view="Default view">e747361983298f10e4b6ad20ceaad3f0</sys_ui_form>
+            <sys_ui_section caption="Location" display_value="Location" name="x_1920732_lifeli_0_organization" sys_domain="global" view="Default view">3d86729583298f10e4b6ad20ceaad344</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-17 13:21:13</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form_section action="INSERT_OR_UPDATE">
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-17 13:21:13</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>01a7765983298f10e4b6ad20ceaad389</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_overrides/>
+            <sys_ui_form display_value="x_1920732_lifeli_0_organization" name="x_1920732_lifeli_0_organization" sys_domain="global" view="Default view">e747361983298f10e4b6ad20ceaad3f0</sys_ui_form>
+            <sys_ui_section caption="Contact details" display_value="Contact details" name="x_1920732_lifeli_0_organization" sys_domain="global" view="Default view">f186729583298f10e4b6ad20ceaad347</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-17 13:21:13</sys_updated_on>
+        </sys_ui_form_section>
+        <sys_ui_form action="INSERT_OR_UPDATE">
+            <name>x_1920732_lifeli_0_organization</name>
+            <roles/>
+            <sys_class_name>sys_ui_form</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-06-17 13:16:22</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>e747361983298f10e4b6ad20ceaad3f0</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_1920732_lifeli_0_organization</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="LifeLink" source="x_1920732_lifeli_0">609e900c832d8310e4b6ad20ceaad31f</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="LifeLink">609e900c832d8310e4b6ad20ceaad31f</sys_scope>
+            <sys_update_name>sys_ui_form_sections_e747361983298f10e4b6ad20ceaad3f0</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-06-17 13:16:22</sys_updated_on>
+            <sys_user/>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_form>
+    </sys_ui_form_sections>
+</record_update>
